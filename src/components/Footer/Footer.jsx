@@ -89,7 +89,7 @@ const Footer = () => {
                     <a href="/frequently-asked-questions"> FAQs </a>
                     <a href={GlobalData.company.companyWhatsapp}> Live Chat </a>
 
-                    <a href="/domain-renewal"> Domain Renewal </a>
+
                     <a href="https://search.google.com/local/writereview?placeid=ChIJM0IEPqRRmg0RyLQAP_5varc">
                       Google Map Review{" "}
                     </a>

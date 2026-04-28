@@ -145,7 +145,7 @@ import {
   BrandTrackingAndPerformanceEvaluationPageDetails,
 } from "./assets/data/PageData";
 
-import DomainRenewal from "./routes/Renewals/DomainRenewal.js";
+
 
 const routes = [
   { path: "/", element: <Home /> },
@@ -220,7 +220,7 @@ const routes = [
   { path: "/products", element: <Products /> },
   { path: "/contactus", element: <Contactus /> },
 
-  { path: "/domain-renewal", element: <DomainRenewal /> },
+
   { path: "/Legal/privacy-policy", element: <PrivacyPolicy /> },
   { path: "/Legal/terms-and-conditions", element: <TermsnConditions /> },
   { path: "/Legal/return-policy", element: <ReturnPolicy /> },
