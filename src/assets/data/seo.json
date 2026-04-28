@@ -1,0 +1,576 @@
+{
+  "home": {
+    "title": "Leor Media - Leading Web Development & Digital Marketing Company in Visakhapatnam.",
+    "description": "Leor Media is a top-rated IT company in Visakhapatnam offering web development, mobile apps, branding, and digital solutions. Learn about our journey, team, and values.",
+    "keywords": "Leor Media,Web Development,Mobile App Development,SEO,Branding,Digital Marketing,UI UX Design,eCommerce Development,Visakhapatnam Software Company,Marketing Company in vizag,Digital Marketing Company in vizag, IT company Visakhapatnam, software development, about us, company profile, web solutions, tech team",
+    "canonical": "https://leormedia.com",
+    "ogImage": "https://leormedia.com/Thumbnails.png"
+  },
+  "aboutus": {
+    "title": "About Leor Media | IT Software Company in Visakhapatnam",
+    "description": "Leor Media is a top-rated IT company in Visakhapatnam offering web development, mobile apps, branding, and digital solutions. Learn about our journey, team, and values.",
+    "keywords": "Leor Media, IT company Visakhapatnam, software development, about us, company profile, web solutions, tech team",
+    "canonical": "https://leormedia.com/aboutus",
+    "ogImage": "https://leormedia.com/thumbnails/about_thumbnail.webp"
+  },
+  "services": {
+    "title": "Our Services | Web, Mobile, CRM & Digital Solutions - Leor Media",
+    "description": "Discover our complete range of services including web development, mobile apps, CRM/ERP systems, branding, and digital marketing tailored for startups and enterprises.",
+    "keywords": "web development Visakhapatnam, CRM services, ERP systems, mobile app development, branding, digital marketing, software solutions",
+    "canonical": "https://leormedia.com/services",
+    "ogImage": "https://leormedia.com/images/services-og.png"
+  },
+  "contactus": {
+    "title": "Contact Leor Media | Let’s Build Something Great",
+    "description": "Get in touch with Leor Media, Visakhapatnam’s trusted software development company. We’re here to help you with web, app, CRM, ERP, and branding solutions.",
+    "keywords": "contact Leor Media, software company Visakhapatnam, IT solutions, web development, CRM, ERP, support, get a quote",
+    "canonical": "https://leormedia.com/contactus",
+    "ogImage": "https://leormedia.com/static/media/Contact_us.581ef6cf3eaf90df6711.png"
+  },
+  "careers": {
+    "title": "Careers at Leor Media | Join Our IT Team in Visakhapatnam",
+    "description": "Explore career opportunities at Leor Media, a leading IT company in Visakhapatnam. Join our team of web developers, marketers, designers, and software experts.",
+    "keywords": "Leor Media careers, IT jobs Visakhapatnam, web developer jobs, digital marketing jobs, tech jobs, software company hiring",
+    "canonical": "https://leormedia.com/careers",
+    "ogImage": "https://leormedia.com/images/Thumbmail-demo.png"
+  },
+  "blogs": {
+    "title": "Leor Media Blogs | Web Development, Tech Trends & Marketing Insights",
+    "description": "Read expert articles, industry trends, case studies, and tips on web development, mobile apps, branding, and digital marketing from Leor Media.",
+    "keywords": "Leor Media blog, web development insights, tech articles, digital marketing tips, IT trends, case studies, software company blog",
+    "canonical": "https://leormedia.com/blogs",
+    "ogImage": "https://leormedia.com/images/Thumbmail-demo.png"
+  },
+  "faq": {
+    "title": "Frequently Asked Questions - Leor Media",
+    "description": "Find answers to common questions about our web development, CRM, ERP, app development, and digital marketing services.",
+    "keywords": "Leor Media FAQ, web development support, CRM queries, app development info, digital marketing answers",
+    "canonical": "https://leormedia.com/frequently-asked-questions",
+    "ogImage": "https://leormedia.com/images/Thumbmail-demo.png"
+  },
+  "events": {
+    "title": "Best Event Management Company in Vizag | Event Planning in Visakhapatnam",
+    "description": "Leor Media is a top-rated event management company in Vizag offering social, corporate, and lifestyle event planning. Expert event planners in Visakhapatnam for birthdays, weddings, conferences, and more.",
+    "keywords": "event management in vizag, event planning in vizag, event planners in visakhapatnam, best event company vizag, social events, corporate events, lifestyle events, vizag events",
+    "canonical": "https://leormedia.com/services/events/",
+    "ogImage": "https://leormedia.com/images/Thumbmail-demo.png"
+  },
+  "mobileapp": {
+    "title": "Mobile App Development Company in Visakhapatnam | Leor Media",
+    "description": "Build powerful Android, iOS, and cross-platform mobile apps with Leor Media. Trusted app development company in Visakhapatnam delivering scalable, user-friendly solutions.",
+    "keywords": "mobile app development Visakhapatnam, Android app developers, iOS app development, cross-platform apps, mobile application company",
+    "canonical": "https://www.vivahamco.com",
+    "ogImage": "https://leormedia.com/images/Thumbmail-demo.png"
+  },
+  "MobileAppDesignDetailsseo": {
+    "title": "Mobile App UI/UX Design Services in Visakhapatnam | Leor Media",
+    "description": "Create intuitive and stunning mobile app designs with our expert UI/UX team. We craft user-centric designs that engage and convert.",
+    "keywords": "mobile app design Visakhapatnam, UI UX app design, app interface design, app mockups, mobile UI design",
+    "canonical": "https://www.vivahamco.com/mobile-app-design",
+    "ogImage": "https://leormedia.com/images/Thumbmail-demo.png"
+  },
+  "IOSAppDevelopmentDetailsseo": {
+    "title": "iOS App Development Company in Visakhapatnam | Leor Media",
+    "description": "We develop custom iOS apps for startups and businesses in Visakhapatnam. Secure, fast, and scalable Apple app development.",
+    "keywords": "iOS app development Visakhapatnam, iPhone app developers, iOS application company, iOS software developers, Swift development",
+    "canonical": "https://www.vivahamco.com/ios-application-development",
+    "ogImage": "https://leormedia.com/images/Thumbmail-demo.png"
+  },
+  "AndroidAppDevelopmentDetailsseo": {
+    "title": "Android App Development Company in Visakhapatnam | Leor Media",
+    "description": "We build high-performance Android applications tailored to your business goals. Get reliable Android app development in Visakhapatnam.",
+    "keywords": "Android app development Visakhapatnam, Android app developers, Kotlin developers, mobile app company, custom Android apps",
+    "canonical": "https://www.vivahamco.com/android-app-development",
+    "ogImage": "https://leormedia.com/images/Thumbmail-demo.png"
+  },
+  "CrossPlatformAppDevelopmentDetailsseo": {
+    "title": "Cross-Platform App Development in Visakhapatnam | Leor Media",
+    "description": "Launch your app faster with React Native and Flutter cross-platform development. One codebase, multiple platforms – optimized by experts in Visakhapatnam.",
+    "keywords": "cross-platform app Visakhapatnam, React Native development, Flutter developers, hybrid app development, multi-platform mobile apps",
+    "canonical": "https://www.vivahamco.com/cross-platform-app-development",
+    "ogImage": "https://leormedia.com/images/Thumbmail-demo.png"
+  },
+  "AppPrototypingDetailsseo": {
+    "title": "App Prototyping & Wireframing Services in Visakhapatnam | Leor Media",
+    "description": "Validate your app ideas with clickable prototypes and wireframes. We help Visakhapatnam businesses visualize app flows and UX before development.",
+    "keywords": "app prototyping Visakhapatnam, app wireframing, UX prototyping, mobile app planning, app mockup services",
+    "canonical": "https://www.vivahamco.com/app-prototyping",
+    "ogImage": "https://leormedia.com/images/Thumbmail-demo.png"
+  },
+  "AppTestingandQualityAssuranceDetailsseo": {
+    "title": "Mobile App Testing & QA in Visakhapatnam | Leor Media",
+    "description": "Ensure bug-free, reliable app performance with our end-to-end QA services. Manual and automated mobile app testing in Visakhapatnam.",
+    "keywords": "app testing Visakhapatnam, mobile app QA, bug fixing, quality assurance services, automated app testing",
+    "canonical": "https://www.vivahamco.com/app-testing-and-quality-assurance",
+    "ogImage": "https://leormedia.com/images/Thumbmail-demo.png"
+  },
+  "AppMaintenanceandSupportDetailsseo": {
+    "title": "App Maintenance & Support Services in Visakhapatnam | Leor Media",
+    "description": "Keep your mobile app updated and running smoothly. We offer ongoing app maintenance, updates, and support for businesses in Visakhapatnam.",
+    "keywords": "app maintenance Visakhapatnam, mobile app updates, post-launch support, app version control, mobile support services",
+    "canonical": "https://www.vivahamco.com/app-maintenance-and-support",
+    "ogImage": "https://leormedia.com/images/Thumbmail-demo.png"
+  },
+  "AppSecurityDetailsseo": {
+    "title": "Mobile App Security Services in Visakhapatnam | Leor Media",
+    "description": "Protect your mobile app from vulnerabilities with top-tier security practices. Data encryption, secure APIs, and code auditing services.",
+    "keywords": "mobile app security Visakhapatnam, app encryption, secure app development, mobile API security, app vulnerability scanning",
+    "canonical": "https://www.vivahamco.com/app-security",
+    "ogImage": "https://leormedia.com/images/Thumbmail-demo.png"
+  },
+  "AppMonetizationStrategyDetailsseo": {
+    "title": "App Monetization Strategy Services | Leor Media Visakhapatnam",
+    "description": "Monetize your mobile app effectively with custom strategies — ads, subscriptions, freemium models, and more, guided by our expert team.",
+    "keywords": "app monetization Visakhapatnam, in-app purchases, mobile ads, freemium strategy, app revenue planning",
+    "canonical": "https://www.vivahamco.com/app-monetization-strategy",
+    "ogImage": "https://leormedia.com/images/Thumbmail-demo.png"
+  },
+  "AppStoreOptimizationDetailsseo": {
+    "title": "App Store Optimization (ASO) Services in Visakhapatnam | Leor Media",
+    "description": "Improve your app visibility and downloads with ASO. We optimize titles, keywords, screenshots, and descriptions for App Store and Play Store.",
+    "keywords": "ASO services Visakhapatnam, app store optimization, increase app downloads, app keyword optimization, Play Store SEO",
+    "canonical": "https://www.vivahamco.com/app-store-optimization",
+    "ogImage": "https://leormedia.com/images/Thumbmail-demo.png"
+  },
+  "EcommerceAppDevelopmentDetailsseo": {
+    "title": "Ecommerce App Development Company in Visakhapatnam | Leor Media",
+    "description": "Launch your online store on mobile with a feature-rich ecommerce app. We build scalable ecommerce apps for retail, grocery, fashion, and more.",
+    "keywords": "ecommerce app development Visakhapatnam, online store app, shopping app, retail mobile app, custom ecommerce solutions",
+    "canonical": "https://www.vivahamco.com/ecommerce-app-development",
+    "ogImage": "https://leormedia.com/images/Thumbmail-demo.png"
+  },
+  "digitalmarketing": {
+    "title": "Digital Marketing Company in Visakhapatnam | Leor Media",
+    "description": "Boost your brand visibility, traffic, and leads with our expert digital marketing services in Visakhapatnam. We offer SEO, social media, PPC, email marketing & more.",
+    "keywords": "digital marketing Visakhapatnam, SEO services, social media marketing, PPC, content marketing, online marketing Visakhapatnam",
+    "canonical": "https://leormedia.com/services/digital-marketing-company",
+    "ogImage": "https://leormedia.com/images/Thumbmail-demo.png"
+  },
+  "SearchEngineOptimizationPageDetailsseo": {
+    "title": "SEO Services in Visakhapatnam | Search Engine Optimization Experts",
+    "description": "Rank higher on Google and drive organic traffic with SEO services from Leor Media. Local SEO, technical SEO, and keyword strategies that work.",
+    "keywords": "SEO Visakhapatnam, search engine optimization, Google ranking, technical SEO, on-page SEO, off-page SEO, keyword strategy",
+    "canonical": "https://leormedia.com/services/digital-marketing-company/search-engine-optimization",
+    "ogImage": "https://leormedia.com/images/Thumbmail-demo.png"
+  },
+  "ContentMarketingPageDetailsseo": {
+    "title": "Content Marketing Services in Visakhapatnam | Leor Media",
+    "description": "Attract, engage, and convert with powerful content strategies. We create SEO-friendly blogs, articles, and branded content that grows your visibility.",
+    "keywords": "content marketing Visakhapatnam, blog writing, article marketing, SEO content, content creation, content strategy",
+    "canonical": "https://leormedia.com/services/digital-marketing-company/content-marketing",
+    "ogImage": "https://leormedia.com/images/Thumbmail-demo.png"
+  },
+  "SocialMediaMarketingPageDetailsseo": {
+    "title": "Social Media Marketing Services in Visakhapatnam | Leor Media",
+    "description": "Grow your audience and boost engagement with strategic social media marketing. Facebook, Instagram, LinkedIn & more — tailored for your brand.",
+    "keywords": "social media marketing Visakhapatnam, SMM, Facebook ads, Instagram marketing, LinkedIn marketing, social media campaigns",
+    "canonical": "https://leormedia.com/services/digital-marketing-company/social-media-marketing",
+    "ogImage": "https://leormedia.com/images/Thumbmail-demo.png"
+  },
+  "EmailMarketingPageDetailsseo": {
+    "title": "Email Marketing Services in Visakhapatnam | Targeted Campaigns",
+    "description": "Convert leads into customers with smart email marketing. We offer drip campaigns, newsletters, and promotional emails tailored to your goals.",
+    "keywords": "email marketing Visakhapatnam, email automation, email campaigns, newsletters, bulk email services, lead nurturing",
+    "canonical": "https://leormedia.com/services/digital-marketing-company/email-marketing",
+    "ogImage": "https://leormedia.com/images/Thumbmail-demo.png"
+  },
+  "PayPerClickAdvertisingPageDetailsseo": {
+    "title": "PPC Advertising Services in Visakhapatnam | Google & Meta Ads",
+    "description": "Maximize your ROI with Pay-Per-Click campaigns on Google, Facebook, and more. Our data-driven PPC ads deliver measurable results.",
+    "keywords": "PPC Visakhapatnam, Google Ads, Facebook Ads, paid advertising, search ads, display ads, pay-per-click marketing",
+    "canonical": "https://leormedia.com/services/digital-marketing-company/pay-per-click-advertising",
+    "ogImage": "https://leormedia.com/images/Thumbmail-demo.png"
+  },
+  "AffiliateMarketingPageDetailsseo": {
+    "title": "Affiliate Marketing Services in Visakhapatnam | Leor Media",
+    "description": "Grow your business with performance-based affiliate marketing. We help set up, manage, and scale affiliate partnerships that deliver results.",
+    "keywords": "affiliate marketing Visakhapatnam, affiliate programs, performance marketing, referral marketing, partner programs",
+    "canonical": "https://leormedia.com/services/digital-marketing-company/affiliate-marketing",
+    "ogImage": "https://leormedia.com/images/Thumbmail-demo.png"
+  },
+  "AnalyticsAndDataAnalysisPageDetailsseo": {
+    "title": "Marketing Analytics Services in Visakhapatnam | Data-Driven Decisions",
+    "description": "Make smarter marketing decisions with advanced analytics and data analysis. We turn marketing data into actionable insights.",
+    "keywords": "marketing analytics Visakhapatnam, data analysis, campaign tracking, performance metrics, Google Analytics, reporting",
+    "canonical": "https://leormedia.com/services/digital-marketing-company/analytics-and-data-analysis",
+    "ogImage": "https://leormedia.com/images/Thumbmail-demo.png"
+  },
+  "ConversionRateOptimizationPageDetailsseo": {
+    "title": "Conversion Rate Optimization Services in Visakhapatnam | CRO Experts",
+    "description": "Turn more visitors into customers with CRO strategies that work. We optimize landing pages, funnels, and user journeys for maximum conversions.",
+    "keywords": "conversion rate optimization Visakhapatnam, CRO services, landing page optimization, website conversions, A/B testing",
+    "canonical": "https://leormedia.com/services/digital-marketing-company/conversion-rate-optimization",
+    "ogImage": "https://leormedia.com/images/Thumbmail-demo.png"
+  },
+  "EcommerceMarketingPageDetailsseo": {
+    "title": "Ecommerce Marketing in Visakhapatnam | Boost Online Store Sales",
+    "description": "Drive traffic and boost sales for your online store. We provide SEO, PPC, email, and social media marketing for ecommerce brands in Visakhapatnam.",
+    "keywords": "ecommerce marketing Visakhapatnam, online store SEO, ecommerce PPC, product marketing, Shopify marketing, WooCommerce marketing",
+    "canonical": "https://leormedia.com/services/digital-marketing-company/ecommerce-marketing",
+    "ogImage": "https://leormedia.com/images/Thumbmail-demo.png"
+  },
+  "LocalSeoAndMarketingPageDetailsseo": {
+    "title": "Local SEO & Marketing Services in Visakhapatnam | Rank Locally",
+    "description": "Dominate local search results with our Local SEO services. We optimize your business listings, maps, and citations for better visibility in Visakhapatnam.",
+    "keywords": "local SEO Visakhapatnam, Google My Business, local search, maps optimization, Visakhapatnam SEO services",
+    "canonical": "https://leormedia.com/services/digital-marketing-company/local-seo-and-marketing",
+    "ogImage": "https://leormedia.com/images/Thumbmail-demo.png"
+  },
+  "MarketingAutomationPageDetailsseo": {
+    "title": "Marketing Automation Services in Visakhapatnam | CRM & Workflow",
+    "description": "Automate your marketing with CRM tools, email flows, lead scoring, and behavior-based triggers. Grow faster with less manual effort.",
+    "keywords": "marketing automation Visakhapatnam, CRM automation, email sequences, lead nurturing, workflow automation",
+    "canonical": "https://leormedia.com/services/digital-marketing-company/marketing-automation",
+    "ogImage": "https://leormedia.com/images/Thumbmail-demo.png"
+  },
+  "MobileMarketingPageDetailsseo": {
+    "title": "Mobile Marketing Services in Visakhapatnam | SMS, Push & App Ads",
+    "description": "Engage mobile users with SMS marketing, app push notifications, and mobile-first ad campaigns. Perfect for reaching users on the go.",
+    "keywords": "mobile marketing Visakhapatnam, SMS campaigns, app advertising, push notifications, mobile user targeting",
+    "canonical": "https://leormedia.com/services/digital-marketing-company/mobile-marketing",
+    "ogImage": "https://leormedia.com/images/Thumbmail-demo.png"
+  },
+  "RemarketingRetargetingPageDetailsseo": {
+    "title": "Remarketing & Retargeting Services in Visakhapatnam | Stay Top of Mind",
+    "description": "Bring visitors back and recover lost conversions with remarketing ads across Google, Facebook, and display networks.",
+    "keywords": "remarketing Visakhapatnam, retargeting ads, cart abandonment recovery, display retargeting, Facebook remarketing",
+    "canonical": "https://leormedia.com/services/digital-marketing-company/remarketing-retargeting",
+    "ogImage": "https://leormedia.com/images/Thumbmail-demo.png"
+  },
+  "VideoMarketingPageDetailsseo": {
+    "title": "Video Marketing Services in Visakhapatnam | Leor Media",
+    "description": "Boost brand awareness and conversions through powerful video marketing. We create, publish, and promote video content that resonates.",
+    "keywords": "video marketing Visakhapatnam, video content creation, YouTube marketing, promotional videos, social media video ads",
+    "canonical": "https://leormedia.com/services/digital-marketing-company/video-marketing",
+    "ogImage": "https://leormedia.com/images/Thumbmail-demo.png"
+  },
+  "InfluencerMarketingPageDetailsseo": {
+    "title": "Influencer Marketing Agency in Visakhapatnam | Connect with Creators",
+    "description": "Collaborate with trusted influencers to amplify your brand reach. We connect businesses with local and national influencers for real engagement.",
+    "keywords": "influencer marketing Visakhapatnam, influencer outreach, Instagram influencers, brand collaborations, creator partnerships",
+    "canonical": "https://leormedia.com/services/digital-marketing-company/influencer-marketing",
+    "ogImage": "https://leormedia.com/images/Thumbmail-demo.png"
+  },
+  "advertising": {
+    "title": "Top Advertising Company in Visakhapatnam | Leor Media",
+    "description": "Reach your target audience with Leor Media’s expert advertising solutions in Visakhapatnam. We deliver impactful digital, print, and outdoor campaigns.",
+    "keywords": "advertising company Visakhapatnam, digital advertising, print ads, brand marketing, online promotion, media buying",
+    "canonical": "https://leormedia.com/services/advertising-company",
+    "ogImage": "https://leormedia.com/images/Thumbmail-demo.png"
+  },
+  "displayadvertising": {
+    "title": "Display Advertising Services in Visakhapatnam | Leor Media",
+    "description": "Engage your audience with high-impact display advertising across websites and apps. Get expert banner and media ad campaigns from Leor Media.",
+    "keywords": "display advertising Visakhapatnam, banner ads, media buying, digital ads, online display campaigns",
+    "canonical": "https://leormedia.com/services/advertising-company/display-advertising",
+    "ogImage": "https://leormedia.com/images/Thumbmail-demo.png"
+  },
+  "videoadvertising": {
+    "title": "Video Advertising Agency in Visakhapatnam | Leor Media",
+    "description": "Drive engagement with video ads crafted for YouTube, OTT, and social platforms. Let Leor Media amplify your brand with video storytelling.",
+    "keywords": "video advertising Visakhapatnam, YouTube ads, OTT advertising, video content marketing, visual branding",
+    "canonical": "https://leormedia.com/services/advertising-company/video-advertising",
+    "ogImage": "https://leormedia.com/images/Thumbmail-demo.png"
+  },
+  "nativeadvertising": {
+    "title": "Native Advertising in Visakhapatnam | Leor Media",
+    "description": "Boost brand trust with native advertising that blends naturally with content. Leor Media creates non-disruptive ad experiences that convert.",
+    "keywords": "native advertising Visakhapatnam, content ads, in-feed ads, sponsored content, seamless ads",
+    "canonical": "https://leormedia.com/services/advertising-company/native-advertising",
+    "ogImage": "https://leormedia.com/images/Thumbmail-demo.png"
+  },
+  "programmaticadvertising": {
+    "title": "Programmatic Advertising Agency in Visakhapatnam | Leor Media",
+    "description": "Automate and optimize your ad spend with data-driven programmatic advertising. Leor Media delivers real-time bidding solutions for high ROI.",
+    "keywords": "programmatic advertising Visakhapatnam, RTB, automated media buying, digital ads optimization",
+    "canonical": "https://leormedia.com/services/advertising-company/programmatic-advertising",
+    "ogImage": "https://leormedia.com/images/Thumbmail-demo.png"
+  },
+  "outdooradvertising": {
+    "title": "Outdoor Advertising in Visakhapatnam | Billboards & Hoardings",
+    "description": "Grab attention with bold outdoor advertising across Visakhapatnam. From billboards to transit ads, Leor Media handles full-scale execution.",
+    "keywords": "outdoor advertising Visakhapatnam, hoardings, billboards, transit ads, OOH marketing",
+    "canonical": "https://leormedia.com/services/advertising-company/outdoor-advertising",
+    "ogImage": "https://leormedia.com/images/Thumbmail-demo.png"
+  },
+  "printadvertising": {
+    "title": "Print Advertising Services in Visakhapatnam | Leor Media",
+    "description": "Reach local audiences through newspapers, magazines, and flyers. Our print advertising services ensure your message is seen and remembered.",
+    "keywords": "print advertising Visakhapatnam, newspaper ads, magazine ads, flyer design, local print media",
+    "canonical": "https://leormedia.com/services/advertising-company/print-advertising",
+    "ogImage": "https://leormedia.com/images/Thumbmail-demo.png"
+  },
+  "radioadvertising": {
+    "title": "Radio Advertising in Visakhapatnam | FM & Online Radio Ads",
+    "description": "Promote your brand through powerful radio ads across FM and digital channels. Leor Media crafts compelling audio scripts that deliver results.",
+    "keywords": "radio advertising Visakhapatnam, FM ads, radio marketing, audio ads, brand jingles",
+    "canonical": "https://leormedia.com/services/advertising-company/radio-advertising",
+    "ogImage": "https://leormedia.com/images/Thumbmail-demo.png"
+  },
+  "tvadvertising": {
+    "title": "TV Advertising Company in Visakhapatnam | Leor Media",
+    "description": "Broadcast your message across top TV channels. We create compelling TV commercials tailored to regional and national audiences.",
+    "keywords": "TV advertising Visakhapatnam, television commercials, ad production, media planning, broadcast marketing",
+    "canonical": "https://leormedia.com/services/advertising-company/tv-advertising",
+    "ogImage": "https://leormedia.com/images/Thumbmail-demo.png"
+  },
+  "ingameadvertising": {
+    "title": "In-Game Advertising in Visakhapatnam | Leor Media",
+    "description": "Reach gamers through immersive in-game ads across mobile and console platforms. Leor Media enables interactive brand placements inside games.",
+    "keywords": "in-game advertising Visakhapatnam, gaming ads, mobile game ads, console ad placements, immersive marketing",
+    "canonical": "https://leormedia.com/services/advertising-company/ingame-advertising",
+    "ogImage": "https://leormedia.com/images/Thumbmail-demo.png"
+  },
+  "theateradvertising": {
+    "title": "Theater Advertising in Visakhapatnam | Cinema Ads | Leor Media",
+    "description": "Advertise on the big screen before movie screenings in Visakhapatnam. Leor Media offers high-impact cinema advertising packages.",
+    "keywords": "cinema advertising Visakhapatnam, theater ads, movie screen ads, pre-movie promotions",
+    "canonical": "https://leormedia.com/services/advertising-company/theater-advertising",
+    "ogImage": "https://leormedia.com/images/Thumbmail-demo.png"
+  },
+  "branding": {
+    "title": "Branding Agency in Visakhapatnam | Leor Media",
+    "description": "Build a powerful brand identity with Leor Media. We offer logo design, brand strategy, and visual branding services to make your business stand out.",
+    "keywords": "branding Visakhapatnam, brand identity, logo design, brand strategy, design agency, creative branding",
+    "canonical": "https://leormedia.com/services/branding-comapny",
+    "ogImage": "https://leormedia.com/images/Thumbmail-demo.png"
+  },
+  "BrandIdentityDesignExclusivePageDetailsseo": {
+    "title": "Exclusive Brand Identity Design in Visakhapatnam | Leor Media",
+    "description": "Stand out with our exclusive brand identity design services. We create unique, memorable brand visuals and strategies for your business success.",
+    "keywords": "exclusive brand identity Visakhapatnam, brand design, custom branding, business branding",
+    "canonical": "https://leormedia.com/services/branding-comapny/brand-identity-design-exclusive",
+    "ogImage": "https://leormedia.com/images/Thumbmail-demo.png"
+  },
+  "BrandLogoDesignPageDetailsseo": {
+    "title": "Professional Logo Design Services in Visakhapatnam | Leor Media",
+    "description": "Get stunning logo designs tailored to your brand. Leor Media offers unique and creative logos that capture your business identity.",
+    "keywords": "logo design Visakhapatnam, branding logo, custom logos, business logo design",
+    "canonical": "https://leormedia.com/services/branding-comapny/brand-logo-design",
+    "ogImage": "https://leormedia.com/images/Thumbmail-demo.png"
+  },
+  "BrandGuidelinesPageDetailsseo": {
+    "title": "Brand Guidelines Development | Leor Media",
+    "description": "Establish consistency with professional brand guidelines. We define your fonts, colors, tone, and style for strong brand recognition.",
+    "keywords": "brand guidelines, brand style guide, branding rules, brand consistency",
+    "canonical": "https://leormedia.com/services/branding-comapny/brand-guidelines",
+    "ogImage": "https://leormedia.com/images/Thumbmail-demo.png"
+  },
+  "BrandPositioningPageDetailsseo": {
+    "title": "Effective Brand Positioning Services | Leor Media",
+    "description": "Position your brand to win. Our strategies help you identify your market, define your USP, and create powerful brand messaging.",
+    "keywords": "brand positioning Visakhapatnam, unique selling proposition, branding strategy, brand perception",
+    "canonical": "https://leormedia.com/services/branding-comapny/brand-positioning",
+    "ogImage": "https://leormedia.com/images/Thumbmail-demo.png"
+  },
+  "BrandStorytellingPageDetailsseo": {
+    "title": "Brand Storytelling Services | Leor Media",
+    "description": "Tell compelling brand stories that connect with your audience. We craft engaging narratives that drive emotional engagement and loyalty.",
+    "keywords": "brand storytelling, storytelling for business, emotional branding, brand narrative",
+    "canonical": "https://leormedia.com/services/branding-comapny/brand-storytelling",
+    "ogImage": "https://leormedia.com/images/Thumbmail-demo.png"
+  },
+  "BrandNamingPageDetailsseo": {
+    "title": "Creative Brand Naming Services | Leor Media",
+    "description": "Find the perfect name for your brand. We develop memorable, strategic names that reflect your vision and attract customers.",
+    "keywords": "brand naming, company name ideas, creative brand names, naming agency",
+    "canonical": "https://leormedia.com/services/branding-comapny/brand-naming",
+    "ogImage": "https://leormedia.com/images/Thumbmail-demo.png"
+  },
+  "VisualIdentityDesignPageDetailsseo": {
+    "title": "Visual Identity Design Agency in Visakhapatnam | Leor Media",
+    "description": "Craft a striking visual identity for your brand. We design logos, colors, icons, and styles that reflect your brand personality.",
+    "keywords": "visual identity design, brand visuals, logo and color palette, visual branding",
+    "canonical": "https://leormedia.com/services/branding-comapny/visual-identity-design",
+    "ogImage": "https://leormedia.com/images/Thumbmail-demo.png"
+  },
+  "BrandMessagingPageDetailsseo": {
+    "title": "Brand Messaging Services | Leor Media",
+    "description": "Shape your voice with strategic brand messaging. We help you define tone, value propositions, and communication guidelines.",
+    "keywords": "brand messaging, brand voice, communication strategy, brand tone",
+    "canonical": "https://leormedia.com/services/branding-comapny/brand-messaging",
+    "ogImage": "https://leormedia.com/images/Thumbmail-demo.png"
+  },
+  "BrandExperienceDesignPageDetailsseo": {
+    "title": "Brand Experience Design | Leor Media",
+    "description": "Deliver exceptional brand experiences across touchpoints. From packaging to digital, we make every interaction memorable.",
+    "keywords": "brand experience design, customer journey, brand interaction, experience strategy",
+    "canonical": "https://leormedia.com/services/branding-comapny/brand-experience-design",
+    "ogImage": "https://leormedia.com/images/Thumbmail-demo.png"
+  },
+  "BrandAwarenessCampaignsPageDetailsseo": {
+    "title": "Brand Awareness Campaigns | Leor Media",
+    "description": "Boost your visibility with tailored brand awareness campaigns. We build recognition using digital, social, and traditional channels.",
+    "keywords": "brand awareness, awareness campaigns, digital branding, brand promotion",
+    "canonical": "https://leormedia.com/services/branding-comapny/brand-awareness-campaigns",
+    "ogImage": "https://leormedia.com/images/Thumbmail-demo.png"
+  },
+  "RebrandingServicesPageDetailsseo": {
+    "title": "Professional Rebranding Services | Leor Media",
+    "description": "Refresh your brand with expert rebranding solutions. We help redefine your image, tone, and positioning to stay relevant.",
+    "keywords": "rebranding services, brand refresh, redesign, repositioning strategy",
+    "canonical": "https://leormedia.com/services/branding-comapny/rebranding-services",
+    "ogImage": "https://leormedia.com/images/Thumbmail-demo.png"
+  },
+  "BrandResearchAndAnalysisPageDetailsseo": {
+    "title": "Brand Research & Analysis | Leor Media",
+    "description": "Make informed branding decisions. Our research uncovers insights on market trends, audience preferences, and competitor strategies.",
+    "keywords": "brand research, branding analysis, competitor analysis, brand insights",
+    "canonical": "https://leormedia.com/services/branding-comapny/brand-research-and-analysis",
+    "ogImage": "https://leormedia.com/images/Thumbmail-demo.png"
+  },
+  "BrandTrackingAndPerformanceEvaluationPageDetailsseo": {
+    "title": "Brand Tracking & Performance Evaluation | Leor Media",
+    "description": "Monitor and improve brand performance with real-time tracking and evaluation tools from Leor Media.",
+    "keywords": "brand tracking, performance evaluation, brand monitoring, branding KPIs",
+    "canonical": "https://leormedia.com/services/branding-comapny/brand-tracking-and-performance-evaluation",
+    "ogImage": "https://leormedia.com/images/Thumbmail-demo.png"
+  },
+  "multimedia": {
+    "title": "Multimedia Services in Visakhapatnam | Leor Media",
+    "description": "From video editing to animation and interactive media, Leor Media offers creative multimedia solutions for your brand and business.",
+    "keywords": "multimedia services Visakhapatnam, animation, video production, motion graphics, creative content, digital storytelling",
+    "canonical": "https://leormedia.com/services/multimedia-company",
+    "ogImage": "https://leormedia.com/static/media/GraphicDesigningCoverImage.57b084edbeb85c55e6d9.png"
+  },
+  "PhotoEditingAndRetouchingPageDetailsseo": {
+    "title": "Photo Editing & Retouching Services in Visakhapatnam | Leor Media",
+    "description": "Enhance your photos with professional editing and retouching services. We perfect every detail to ensure your images look stunning and polished.",
+    "keywords": "photo editing Visakhapatnam, image retouching, digital photo enhancement, Photoshop editing, visual content editing",
+    "canonical": "https://leormedia.com/services/multimedia-company/photo-editing-and-retouching",
+    "ogImage": "https://leormedia.com/images/Thumbmail-demo.png"
+  },
+  "MotionGraphicsAndAnimationPageDetailsseo": {
+    "title": "Motion Graphics & Animation Services | Leor Media Visakhapatnam",
+    "description": "Bring ideas to life with dynamic motion graphics and animation. Our creative team builds captivating animated content for brands and campaigns.",
+    "keywords": "motion graphics Visakhapatnam, animation services, explainer videos, 2D animation, 3D animation, visual storytelling",
+    "canonical": "https://leormedia.com/services/multimedia-company/motion-graphics-and-animation",
+    "ogImage": "https://leormedia.com/images/Thumbmail-demo.png"
+  },
+  "RenderingAndVisualizationPageDetailsseo": {
+    "title": "3D Rendering & Visualization Services in Visakhapatnam | Leor Media",
+    "description": "Visualize your ideas with realistic 3D rendering and architectural visualization. Ideal for products, buildings, and interactive demos.",
+    "keywords": "3D rendering Visakhapatnam, architectural visualization, 3D modeling, product render, interior design rendering",
+    "canonical": "https://leormedia.com/services/multimedia-company/rendering-and-visualization",
+    "ogImage": "https://leormedia.com/images/Thumbmail-demo.png"
+  },
+  "BusinessCardAndStationeryDesignPageDetailsseo": {
+    "title": "Business Card & Stationery Design | Leor Media Visakhapatnam",
+    "description": "Build brand credibility with professionally designed business cards, letterheads, and stationery kits that reflect your identity.",
+    "keywords": "business card design Visakhapatnam, stationery design, letterhead design, corporate identity, print design",
+    "canonical": "https://leormedia.com/services/multimedia-company/business-card-and-stationery-design",
+    "ogImage": "https://leormedia.com/images/Thumbmail-demo.png"
+  },
+  "SignageAndBillboardDesignPageDetailsseo": {
+    "title": "Signage & Billboard Design Services in Visakhapatnam | Leor Media",
+    "description": "Catch attention with large-format signage and billboard designs. Perfect for outdoor advertising and brand visibility.",
+    "keywords": "billboard design Visakhapatnam, signage design, outdoor branding, hoarding design, advertising graphics",
+    "canonical": "https://leormedia.com/services/multimedia-company/signage-and-billboard-design",
+    "ogImage": "https://leormedia.com/images/Thumbmail-demo.png"
+  },
+  "TShirtAndMerchandiseDesignPageDetailsseo": {
+    "title": "T-Shirt & Merchandise Design | Leor Media Visakhapatnam",
+    "description": "Custom t-shirt and merchandise designs that reflect your brand identity. Great for corporate events, campaigns, and promotions.",
+    "keywords": "merchandise design Visakhapatnam, t-shirt graphics, apparel branding, promotional design, product design",
+    "canonical": "https://leormedia.com/services/multimedia-company/t-shirt-and-merchandise-design",
+    "ogImage": "https://leormedia.com/images/Thumbmail-demo.png"
+  },
+  "EbookAndPrintBookCoverDesignPageDetailsseo": {
+    "title": "eBook & Print Book Cover Design | Leor Media Visakhapatnam",
+    "description": "Design professional covers for eBooks and printed books to captivate readers and reflect your story’s tone and message.",
+    "keywords": "book cover design Visakhapatnam, ebook cover, print book cover, publishing graphics, author branding",
+    "canonical": "https://leormedia.com/services/multimedia-company/ebook-and-print-book-cover-design",
+    "ogImage": "https://leormedia.com/images/Thumbmail-demo.png"
+  },
+  "SocialMediaGraphicsPageDetailsseo": {
+    "title": "Social Media Graphics Design in Visakhapatnam | Leor Media",
+    "description": "Stand out online with eye-catching social media creatives for posts, ads, stories, and reels across platforms like Instagram and Facebook.",
+    "keywords": "social media design Visakhapatnam, Instagram creatives, Facebook graphics, post design, digital content",
+    "canonical": "https://leormedia.com/services/multimedia-company/social-media-graphics",
+    "ogImage": "https://leormedia.com/images/Thumbmail-demo.png"
+  },
+  "InfographicDesignPageDetailsseo": {
+    "title": "Infographic Design Services | Leor Media Visakhapatnam",
+    "description": "Simplify complex data with attractive infographic designs. We create visuals that educate, inform, and engage your audience.",
+    "keywords": "infographic design Visakhapatnam, data visualization, visual storytelling, infographic content, corporate infographics",
+    "canonical": "https://leormedia.com/services/multimedia-company/infographic-design",
+    "ogImage": "https://leormedia.com/images/Thumbmail-demo.png"
+  },
+  "IllustrationServicesPageDetailsseo": {
+    "title": "Custom Illustration Services in Visakhapatnam | Leor Media",
+    "description": "Unique illustrations for books, marketing, and digital content. Our artists bring ideas to life with hand-drawn or vector styles.",
+    "keywords": "illustration services Visakhapatnam, custom artwork, digital illustration, hand-drawn graphics, vector art",
+    "canonical": "https://leormedia.com/services/multimedia-company/illustration-services",
+    "ogImage": "https://leormedia.com/images/Thumbmail-demo.png"
+  },
+  "BannerDesignPageDetailsseo": {
+    "title": "Banner Design Services | Leor Media Visakhapatnam",
+    "description": "Create bold and vibrant banners for online, print, or event purposes. Perfect for promotions, sales, or corporate campaigns.",
+    "keywords": "banner design Visakhapatnam, promotional banners, digital banners, event graphics, web banners",
+    "canonical": "https://leormedia.com/services/multimedia-company/banner-design",
+    "ogImage": "https://leormedia.com/images/Thumbmail-demo.png"
+  },
+  "BrochureDesignPageDetailsseo": {
+    "title": "Brochure Design Company in Visakhapatnam | Leor Media",
+    "description": "Engaging brochure designs that showcase your brand, products, or services. Ideal for marketing and corporate presentations.",
+    "keywords": "brochure design Visakhapatnam, company brochure, product catalog, flyer design, corporate brochure",
+    "canonical": "https://leormedia.com/services/multimedia-company/brochure-design",
+    "ogImage": "https://leormedia.com/images/Thumbmail-demo.png"
+  },
+  "PosterAndFlyerDesignPageDetailsseo": {
+    "title": "Poster & Flyer Design Services in Visakhapatnam | Leor Media",
+    "description": "Design visually striking posters and flyers for events, product launches, or promotions to grab attention fast.",
+    "keywords": "poster design Visakhapatnam, flyer design, promotional posters, event marketing, advertising flyers",
+    "canonical": "https://leormedia.com/services/multimedia-company/poster-and-flyer-design",
+    "ogImage": "https://leormedia.com/images/Thumbmail-demo.png"
+  },
+  "PackagingDesignPageDetailsseo": {
+    "title": "Packaging Design Company in Visakhapatnam | Leor Media",
+    "description": "Get attractive, functional packaging designs that reflect your brand identity and attract buyers on the shelf.",
+    "keywords": "packaging design Visakhapatnam, product package design, label design, box design, retail branding",
+    "canonical": "https://leormedia.com/services/multimedia-company/packaging-design",
+    "ogImage": "https://leormedia.com/images/Thumbmail-demo.png"
+  },
+  "UserExperienceDesignPageDetailsseo": {
+    "title": "UX Design Services in Visakhapatnam | Leor Media",
+    "description": "Deliver exceptional user experiences with well-researched and intuitive UX designs for mobile apps, websites, and platforms.",
+    "keywords": "UX design Visakhapatnam, user experience, interaction design, usability, interface design",
+    "canonical": "https://leormedia.com/services/multimedia-company/user-experience-design",
+    "ogImage": "https://leormedia.com/images/Thumbmail-demo.png"
+  },
+  "UserInterfaceDesignPageDetailsseo": {
+    "title": "UI Design Services | Leor Media Visakhapatnam",
+    "description": "Beautiful and functional user interface designs that enhance engagement across mobile, desktop, and web platforms.",
+    "keywords": "UI design Visakhapatnam, user interface design, mobile UI, web UI, design system",
+    "canonical": "https://leormedia.com/services/multimedia-company/user-interface-design",
+    "ogImage": "https://leormedia.com/images/Thumbmail-demo.png"
+  },
+  "WebDesignPageDetailsseo": {
+    "title": "Web Design Company in Visakhapatnam | Leor Media",
+    "description": "Custom website designs that combine aesthetics with performance to elevate your online presence.",
+    "keywords": "web design Visakhapatnam, website UI/UX, responsive design, creative web design, landing page design",
+    "canonical": "https://leormedia.com/services/multimedia-company/web-design",
+    "ogImage": "https://leormedia.com/images/Thumbmail-demo.png"
+  },
+  "PrintDesignPageDetailsseo": {
+    "title": "Print Design Services | Leor Media Visakhapatnam",
+    "description": "From posters to magazines, we design print materials that align with your brand and message.",
+    "keywords": "print design Visakhapatnam, print media design, magazine layout, catalog design, editorial graphics",
+    "canonical": "https://leormedia.com/services/multimedia-company/print-design",
+    "ogImage": "https://leormedia.com/images/Thumbmail-demo.png"
+  },
+  "BrandIdentityDesignPageDetailsseo": {
+    "title": "Brand Identity Design Services | Leor Media Visakhapatnam",
+    "description": "Establish a strong brand presence with logos, color palettes, typography, and brand guidelines crafted to perfection.",
+    "keywords": "brand identity Visakhapatnam, branding services, brand guidelines, visual identity, corporate branding",
+    "canonical": "https://leormedia.com/services/multimedia-company/brand-identity-design",
+    "ogImage": "https://leormedia.com/images/Thumbmail-demo.png"
+  },
+  "LogoDesignPageDetailsseo": {
+    "title": "Logo Design Company in Visakhapatnam | Leor Media",
+    "description": "Get a memorable and versatile logo that reflects your brand values. Suitable for businesses of all sizes and industries.",
+    "keywords": "logo design Visakhapatnam, brand logo, professional logo design, custom logos, branding identity",
+    "canonical": "https://leormedia.com/services/multimedia-company/logo-design",
+    "ogImage": "https://leormedia.com/images/Thumbmail-demo.png"
+  }
+}

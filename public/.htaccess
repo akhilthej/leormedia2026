@@ -1,0 +1,73 @@
+# ==============================
+# 🚀 General Rewrite Rules
+# ==============================
+
+Options -MultiViews
+RewriteEngine On
+
+# Force HTTPS (if not already)
+RewriteCond %{HTTPS} off
+RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+# Force non-www (redirect www → non-www)
+RewriteCond %{HTTP_HOST} ^www\.leormedia\.com [NC]
+RewriteRule ^(.*)$ https://leormedia.com/$1 [L,R=301]
+
+# Use index.html as default
+DirectoryIndex index.html
+
+# Serve existing files/folders normally
+RewriteCond %{REQUEST_FILENAME} -f [OR]
+RewriteCond %{REQUEST_FILENAME} -d
+RewriteRule ^ - [L]
+
+# Redirect all other requests to index.html (for React Router)
+RewriteRule ^ index.html [L]
+
+# ==============================
+# 🗜️ Compression (Gzip + Brotli)
+# ==============================
+
+# Tell browsers that .gz and .br files are compressed versions
+AddEncoding gzip .gz
+AddEncoding br .br
+
+# Correct MIME types for compressed files
+<FilesMatch "\.js\.gz$">
+  ForceType "application/javascript"
+  Header set Content-Encoding gzip
+</FilesMatch>
+
+<FilesMatch "\.css\.gz$">
+  ForceType "text/css"
+  Header set Content-Encoding gzip
+</FilesMatch>
+
+<FilesMatch "\.html\.gz$">
+  ForceType "text/html"
+  Header set Content-Encoding gzip
+</FilesMatch>
+
+<FilesMatch "\.js\.br$">
+  ForceType "application/javascript"
+  Header set Content-Encoding br
+</FilesMatch>
+
+<FilesMatch "\.css\.br$">
+  ForceType "text/css"
+  Header set Content-Encoding br
+</FilesMatch>
+
+<FilesMatch "\.html\.br$">
+  ForceType "text/html"
+  Header set Content-Encoding br
+</FilesMatch>
+
+# Serve Brotli first if supported, otherwise fall back to gzip
+RewriteCond %{HTTP:Accept-Encoding} br
+RewriteCond %{REQUEST_FILENAME}\.br -f
+RewriteRule ^(.+)\.(js|css|html)$ $1.$2.br [L]
+
+RewriteCond %{HTTP:Accept-Encoding} gzip
+RewriteCond %{REQUEST_FILENAME}\.gz -f
+RewriteRule ^(.+)\.(js|css|html)$ $1.$2.gz [L]

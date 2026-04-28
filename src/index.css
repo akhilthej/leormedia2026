@@ -1,0 +1,204 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "TuskerGrotesk";
+  src: url("./assets/fonts/TuskerGrotesk.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+body {
+  background-color: rgb(255, 255, 255)
+  
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  
+}
+
+
+/* src/index.css */
+* {
+  scroll-behavior: smooth;
+}
+/* For Webkit Browsers (Chrome, Safari, Edge) */
+::-webkit-scrollbar {
+  width: 0px;
+  height: 0px;
+  display: none;
+}
+
+::-webkit-scrollbar-thumb {
+  display: none;
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-track {
+  display: none;
+  background: transparent;
+}
+
+::-webkit-scrollbar-button {
+  display: none;
+}
+
+::-webkit-scrollbar-corner {
+  display: none;
+}
+
+/* For Firefox */
+* {
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE and Edge */
+}
+
+/* For IE and Edge */
+*::-webkit-scrollbar {
+  display: none;
+}
+
+/* Define the animation keyframes */
+@keyframes moveUpDown {
+  0%, 100% {
+    transform: translateY(0); /* Start and end position: no vertical movement */
+  }
+  50% {
+    transform: translateY(-50px); /* Middle position: move up 10 pixels */
+  }
+}
+/* Apply the animation to the element */
+.upanddown {
+  animation: moveUpDown 1s ease-in-out infinite; /* 2s duration, ease-in-out timing, infinite loop */
+}
+
+
+
+.button1 {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px; /* same as gap-2 */
+  padding: 0.5rem 1.5rem; /* py-2 px-6 */
+  border-radius: 9999px; /* rounded-full */
+  background-color: #FFB624; /* bg-secondary */
+  color: #000; /* text-black */
+  font-weight: 500; /* font-medium */
+  text-decoration: none;
+  transition: all 0.3s ease; /* transition duration-300 */
+}
+
+.button1:hover {
+  background-color: #FFB624; /* hover:bg-secondary-100 */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15); /* hover:shadow-md */
+  transform: scale(1.05); /* hover:scale-105 */
+}
+
+
+.button1black {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px; /* same as gap-2 */
+  padding: 0.5rem 1.5rem; /* py-2 px-6 */
+  border-radius: 9999px; /* rounded-full */
+  background-color: #000000; /* bg-secondary */
+  color: #FFB624; /* text-black */
+  font-weight: 500; /* font-medium */
+  text-decoration: none;
+  transition: all 0.3s ease; /* transition duration-300 */
+}
+
+.button1black:hover {
+  background-color: #ffffff; /* hover:bg-secondary-100 */
+   color: #000000; /* text-black */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15); /* hover:shadow-md */
+  transform: scale(1.05); /* hover:scale-105 */
+}
+
+
+
+.button2 {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px; /* gap-2 */
+  padding: 0.5rem 1.5rem; /* py-2 px-6 */
+  border-radius: 9999px; /* rounded-full */
+  border: 1px solid #FFB624; /* border-secondary */
+  color: #FFB624; /* text-secondary */
+  font-weight: 500; /* font-medium */
+  text-decoration: none;
+  transition: all 0.3s ease; /* transition duration-300 */
+}
+
+.button2:hover {
+  background-color: #ffffff; /* hover:bg-secondary-100 */
+  color: #000; /* hover:text-black */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15); /* hover:shadow-md */
+  transform: scale(1.05); /* hover:scale-105 */
+}
+
+
+
+
+
+.logo-path {
+  opacity:0;
+  transform: translateY(400px);
+  animation: fadeInUpBounce 0.2s forwards;
+  animation-timing-function: ease-out;
+}
+@keyframes fadeInUpBounce {
+  0% {
+    opacity: 0;
+    transform: translateY(400px);
+  }
+  60% {
+    opacity: 1;
+    transform: translateY(-20px); /* move a bit above */
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0); /* settle at original */
+  }
+}
+
+/* Group animation: slide down */
+.logo-wrapper {
+  animation: logoSlideDown 0.3s forwards;
+  animation-delay: 1.5s; /* starts after logo bounce finishes */
+}
+
+@keyframes logoSlideDown {
+  0% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(100%);
+    opacity: 1; /* optional: fade out while sliding */
+  }
+}
+
+
+/*Scroll Navbar*/
+.animate-scroll {
+  display: inline-block;
+  animation: scrollText 30s linear infinite;
+}
+
+@keyframes scrollText {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+
+
+
+
