@@ -154,7 +154,7 @@ const ContactForm = () => {
       icon: <FaPhone />,
       label: "Phone",
       value: "+91 81434 07758",
-      href: "tel:+918143407758",
+      href: "tel:+919666643456",
       color: "text-green-600",
     },
     {
@@ -364,7 +364,7 @@ const ContactForm = () => {
                   <span className="text-sm font-medium">Email</span>
                 </a>
                 <a
-                  href="tel:+918143407758"
+                  href="tel:+919666643456"
                   className="flex items-center gap-2 bg-white px-4 py-2 rounded-lg border border-gray-300 hover:border-primary transition-colors"
                 >
                   <FaPhone className="text-green-600" />

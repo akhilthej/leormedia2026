@@ -192,7 +192,7 @@ const Footer = () => {
       </section>
 
       <div
-        className="flex flex-col fixed left-2 z-50 items-center"
+        className="flex flex-col fixed right-2 z-50 items-center"
         style={{
           bottom: "calc(env(safe-area-inset-bottom, 0px) + 1rem)",
         }}
@@ -201,7 +201,7 @@ const Footer = () => {
         <div className="group relative flex flex-col">
           {/* Main Button */}
           <a
-            href="https://wa.me/918143407758"
+            href={GlobalData.company.companyWhatsapp}
             target="_blank"
             rel="noopener noreferrer"
             className="relative w-12 h-12 flex items-center justify-center rounded-full bg-primary text-white shadow-lg hover:shadow-xl hover:scale-105 active:scale-95 transition-all duration-300 transform hover:rotate-[-5deg] group-hover:bg-[#128C7E]"
@@ -215,12 +215,6 @@ const Footer = () => {
             </span>
           </a>
 
-          {/* Tooltip Text */}
-          <div className="absolute left-full top-1/2 ml-3 transform -translate-y-1/2 px-3 py-2 bg-gray-900 text-white text-xs font-medium rounded-lg whitespace-nowrap opacity-0 group-hover:opacity-100 transition-all duration-300 pointer-events-none shadow-lg translate-x-[-10px] group-hover:translate-x-0">
-            Chat with us on WhatsApp!
-            {/* Tooltip Arrow */}
-            <div className="absolute top-1/2 -left-2 transform -translate-y-1/2 border-t-8 border-b-8 border-r-8 border-t-transparent border-b-transparent border-r-gray-900"></div>
-          </div>
         </div>
       </div>
     </main>

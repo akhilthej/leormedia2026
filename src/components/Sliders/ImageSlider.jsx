@@ -20,7 +20,7 @@ const ImageSlider = () => {
       },
       button2: {
         text: "Contact us",
-        link: "https://api.whatsapp.com/send?phone=918143407758&text=Hi,%20need%20Detials%20Regarding%20Events",
+        link: "https://api.whatsapp.com/send?phone=919666643456&text=Hi,%20need%20Detials%20Regarding%20Events",
       },
     },
     {
@@ -33,7 +33,7 @@ const ImageSlider = () => {
       },
       button2: {
         text: "Contact Us",
-        link: "https://api.whatsapp.com/send?phone=918143407758&text=Hi,%20need%20Detials%20Regarding%20DigitalMarketing",
+        link: "https://api.whatsapp.com/send?phone=919666643456&text=Hi,%20need%20Detials%20Regarding%20DigitalMarketing",
       },
     },
     {
@@ -46,7 +46,7 @@ const ImageSlider = () => {
       },
       button2: {
         text: "Contact Us",
-        link: "https://api.whatsapp.com/send?phone=918143407758&text=Hi,%20need%20Detials%20Regarding%20GraphicDesigning",
+        link: "https://api.whatsapp.com/send?phone=919666643456&text=Hi,%20need%20Detials%20Regarding%20GraphicDesigning",
       },
     },
     {
@@ -59,7 +59,7 @@ const ImageSlider = () => {
       },
       button2: {
         text: "Contact us",
-        link: "https://api.whatsapp.com/send?phone=918143407758&text=Hi,%20need%20Detials%20Regarding%20Branding",
+        link: "https://api.whatsapp.com/send?phone=919666643456&text=Hi,%20need%20Detials%20Regarding%20Branding",
       },
     },
     {
@@ -72,7 +72,7 @@ const ImageSlider = () => {
       },
       button2: {
         text: "Contact us",
-        link: "https://api.whatsapp.com/send?phone=918143407758&text=Hi,%20need%20Detials%20Regarding%20Advertising",
+        link: "https://api.whatsapp.com/send?phone=919666643456&text=Hi,%20need%20Detials%20Regarding%20Advertising",
       },
     },
   ];
