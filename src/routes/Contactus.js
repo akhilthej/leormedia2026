@@ -146,15 +146,15 @@ const ContactForm = () => {
     {
       icon: <HiOutlineMail className="text-xl" />,
       label: "Email",
-      value: "mail@leormedia.com",
-      href: "mailto:mail@leormedia.com",
+      value: GlobalData.company.companyEmail,
+      href: `mailto:${GlobalData.company.companyEmail}`,
       color: "text-primary",
     },
     {
       icon: <FaPhone />,
       label: "Phone",
-      value: "+91 81434 07758",
-      href: "tel:+919666643456",
+      value: GlobalData.company.companyPhone,
+      href: `tel:${GlobalData.company.companyPhone}`,
       color: "text-green-600",
     },
     {
@@ -357,14 +357,14 @@ const ContactForm = () => {
               </h3>
               <div className="flex flex-wrap gap-3">
                 <a
-                  href="mailto:mail@leormedia.com"
+                  href={`mailto:${GlobalData.company.companyEmail}`}
                   className="flex items-center gap-2 bg-white px-4 py-2 rounded-lg border border-gray-300 hover:border-primary transition-colors"
                 >
                   <FaEnvelope className="text-primary" />
                   <span className="text-sm font-medium">Email</span>
                 </a>
                 <a
-                  href="tel:+919666643456"
+                  href={`tel:${GlobalData.company.companyPhone}`}
                   className="flex items-center gap-2 bg-white px-4 py-2 rounded-lg border border-gray-300 hover:border-primary transition-colors"
                 >
                   <FaPhone className="text-green-600" />
@@ -405,7 +405,7 @@ const ContactForm = () => {
           </p>
           <div className="flex flex-wrap justify-center gap-4">
             <a
-              href="mailto:mail@leormedia.com"
+              href={`mailto:${GlobalData.company.companyEmail}`}
               className="inline-flex items-center gap-2 bg-primary text-white px-6 py-3 rounded-lg hover:bg-primary-100 transition-colors font-medium"
             >
               <FaEnvelope />
