@@ -10,10 +10,10 @@ const GlobalData = {
     /*Social media */
     companyfacebook: "https://www.facebook.com/leormedia/",
     companyinstagram: "https://www.instagram.com/leormedia/",
-    companygit: "https://github.com/akhilthej/",
-    companytwitter: "https://twitter.com/leormedia/",
-    companyyoutube: "https://twitter.com/leormedia/",
-    companylinkedin: "https://twitter.com/leormedia/",
+    companytwitter: "https://x.com/leormedia/",
+    companylinkedin: "https://www.linkedin.com/company/leormedia/",
+    companypinterest: "https://www.pinterest.com/leormedia/",
+    companyyoutube: "https://www.youtube.com/@leormedia/",
   },
 };
 

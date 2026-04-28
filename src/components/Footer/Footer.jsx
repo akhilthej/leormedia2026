@@ -1,8 +1,9 @@
-import { goodfirms, googlereview } from "../../assets/data/icon_data";
+import { googlereview } from "../../assets/data/icon_data";
 
 import footer_csd from "../../assets/LogoFooter.svg";
 
-import { ImFacebook2, ImInstagram, ImTwitter, ImGithub } from "react-icons/im";
+import { FaFacebookF, FaInstagram, FaLinkedinIn, FaPinterestP } from "react-icons/fa";
+import { FaXTwitter } from "react-icons/fa6";
 import { FaWhatsapp } from "react-icons/fa";
 
 import { GlobalData } from "../../assets/data/GlodalData";
@@ -30,110 +31,87 @@ const Footer = () => {
                   />
                 </a>
                 <p className="max-w-xs mt-4 text-[12px] text-secondary ">
-                  We are a web Developing & Designing company with a mission to
-                  help build there business online. We accomplish this by
-                  continuously developing technology, giving expert assistance,
-                  and ensuring a flawless online website experience.
-                  <br />
+                  Leor Media offers creative event management, branding, and
+                  advertising solutions that elevate your brand and connect with
+                  your audience effectively.
                 </p>
 
                 <div className="flex space-x-6 text-secondary pt-2">
-                  <a href={GlobalData.company.companyfacebook}>
-                    <ImFacebook2 />
+                  <a href={GlobalData.company.companyfacebook} className="hover:text-primary transition-colors">
+                    <FaFacebookF size={18} />
                   </a>
-                  <a href={GlobalData.company.companyinstagram}>
-                    <ImInstagram />
+                  <a href={GlobalData.company.companyinstagram} className="hover:text-primary transition-colors">
+                    <FaInstagram size={18} />
                   </a>
-                  <a href={GlobalData.company.companytwitter}>
-                    <ImTwitter />
+                  <a href={GlobalData.company.companytwitter} className="hover:text-primary transition-colors">
+                    <FaXTwitter size={18} />
                   </a>
-                  <a href={GlobalData.company.companygit}>
-                    <ImGithub />
+                  <a href={GlobalData.company.companypinterest} className="hover:text-primary transition-colors">
+                    <FaPinterestP size={18} />
+                  </a>
+                  <a href={GlobalData.company.companylinkedin} className="hover:text-primary transition-colors">
+                    <FaLinkedinIn size={18} />
                   </a>
                 </div>
               </div>
-              <div className="grid grid-cols-2 gap-8 lg:col-span-2 lg:grid-cols-4">
+              <div className="grid grid-cols-2 gap-8 lg:col-span-2 lg:grid-cols-3">
                 <div>
-                  <p className="font-medium text-secondary">Company</p>
+                  <p className="font-medium text-secondary uppercase tracking-wider">Services</p>
                   <nav className="flex flex-col mt-4 space-y-2 text-[12px] text-secondary">
-                    <a href="/aboutus"> About us </a>
-                    <a href="/clients"> Clients </a>
-                    <a href="/products"> Products </a>
-                    <a href="/portfolio"> Portfolio </a>
+                    <a href="/services/events" className="hover:text-primary transition-colors"> Events </a>
+                    <a href="https://www.vivahamco.com/" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors"> Wedding </a>
+                    <a href="/services/digital-marketing-company" className="hover:text-primary transition-colors"> Digital Marketing </a>
+                    <a href="/services/branding-comapny" className="hover:text-primary transition-colors"> Branding </a>
+                    <a href="/services/advertising-company" className="hover:text-primary transition-colors"> Advertising </a>
+                    <a href="/services/multimedia-company" className="hover:text-primary transition-colors"> Multimedia </a>
                   </nav>
                 </div>
                 <div>
-                  <p className="font-medium text-secondary">Services</p>
+                  <p className="font-medium text-secondary uppercase tracking-wider">Useful links</p>
                   <nav className="flex flex-col mt-4 space-y-2 text-[12px] text-secondary">
-                    <a href="/services/events">
-                      {" "}
-                      Events{" "}
-                    </a>
-                    <a href="https://www.vivahamco.com/" target="_blank" rel="noopener noreferrer">
-                      {" "}
-                      Weddings{" "}
-                    </a>
-                    <a href="/services/digital-marketing-company">
-                      {" "}
-                      Digital Marketing{" "}
-                    </a>
-                    <a href="/services/branding-comapny"> Branding </a>
-                    <a href="/services/advertising-company"> Advertising </a>
-                    <a href="/services/multimedia-company"> Multimedia </a>
+                    <a href="/aboutus" className="hover:text-primary transition-colors"> About Us </a>
+                    <a href="/services" className="hover:text-primary transition-colors"> Services </a>
+                    <a href="/portfolio" className="hover:text-primary transition-colors"> Gallery </a>
+                    <a href="/contactus" className="hover:text-primary transition-colors"> Contact Us </a>
+                    <a href="/blogs" className="hover:text-primary transition-colors"> Blogs </a>
                   </nav>
                 </div>
                 <div>
-                  <p className="font-medium text-secondary">Helpful Links</p>
+                  <p className="font-medium text-secondary uppercase tracking-wider">Legal</p>
                   <nav className="flex flex-col mt-4 space-y-2 text-[12px] text-secondary">
-                    <a href="/contactus"> Contact </a>
-                    <a href="/frequently-asked-questions"> FAQs </a>
-                    <a href={GlobalData.company.companyWhatsapp}> Live Chat </a>
-
-
-                    <a href="https://search.google.com/local/writereview?placeid=ChIJM0IEPqRRmg0RyLQAP_5varc">
-                      Google Map Review{" "}
-                    </a>
-                  </nav>
-                </div>
-                <div>
-                  <p className="font-medium text-secondary">Legal</p>
-                  <nav className="flex flex-col mt-4 space-y-2 text-[12px] text-secondary">
-                    <a href="/Legal/privacy-policy"> Privacy Policy </a>
-                    <a href="/Legal/terms-and-conditions">
-                      <div> Terms & Conditions </div>
-                    </a>
-
-                    <a href="/Legal/return-policy">
-                      <div> Cancellation & Refund Policy </div>
-                    </a>
-
-                    <a href="/Legal/disclaimer">
-                      <div> Disclaimer </div>
-                    </a>
-
-                    <a href="/Legal/shipping-and-delivery">
-                      <div> Shipping & Delivery </div>
-                    </a>
+                    <a href="/Legal/privacy-policy" className="hover:text-primary transition-colors"> Privacy Policy </a>
+                    <a href="/Legal/terms-and-conditions" className="hover:text-primary transition-colors"> Terms & Conditions </a>
+                    <a href="/Legal/return-policy" className="hover:text-primary transition-colors"> Cancellation & Refund Policy </a>
+                    <a href="/Legal/disclaimer" className="hover:text-primary transition-colors"> Disclaimer </a>
+                    <a href="/Legal/shipping-and-delivery" className="hover:text-primary transition-colors"> Shipping & Delivery </a>
                   </nav>
                 </div>
               </div>
             </div>
 
-            <div className="flex items-center justify-center mt-4">
-              <a
-                className="p-2"
-                href="https://www.goodfirms.co/company/cyber-space-digital"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <img
-                  className="h-10 rounded-sm hover:animate-pulse max-w-full"
-                  src={goodfirms}
-                  alt="goodfirms_icon"
-                  width="120"
-                  height="50"
-                />
-              </a>
+            <div className="mt-12 grid grid-cols-1 lg:grid-cols-2 gap-8 items-start border-t border-gray-800 pt-8">
+              <div>
+                <p className="font-medium text-secondary mb-4 uppercase tracking-wider">Address</p>
+                <p className="text-[13px] text-secondary leading-relaxed">
+                  flot no 404, 4th Floor, Near GVK Plaza, Gurudwara, Madhuranagar,<br />
+                  Dwaraka Nagar, Visakhapatnam, Andhra Pradesh 530016
+                </p>
+              </div>
+              <div className="h-48 w-full rounded-xl overflow-hidden shadow-lg border border-gray-800">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3800.2397366200476!2d83.30672910000003!3d17.7333397!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a3943260a034961%3A0xa55201e3106a886a!2sLeormedia!5e0!3m2!1sen!2sin!4v1777386710467!5m2!1sen!2sin"
+                  width="100%"
+                  height="100%"
+                  style={{ border: 0 }}
+                  allowFullScreen=""
+                  loading="lazy"
+                  title="Leor Media Location"
+                  referrerPolicy="no-referrer-when-downgrade"
+                ></iframe>
+              </div>
+            </div>
+
+            <div className="flex items-center justify-center mt-8">
               <a
                 className="p-2"
                 href="https://g.page/r/Cci0AD_-b2q3EAI/review"

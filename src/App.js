@@ -727,15 +727,18 @@ const routes = [
 
 export function App() {
   const location = useLocation();
-  const [isLoading, setIsLoading] = useState(true);
+  const [isLoading, setIsLoading] = useState(location.pathname === "/");
 
   useEffect(() => {
-    setIsLoading(true);
-    const timer = setTimeout(() => {
+    if (location.pathname === "/") {
+      setIsLoading(true);
+      const timer = setTimeout(() => {
+        setIsLoading(false);
+      }, 2500); // Loader visible for 2.5 seconds to accommodate animation
+      return () => clearTimeout(timer);
+    } else {
       setIsLoading(false);
-    }, 2500); // Loader visible for 2.5 seconds to accommodate animation
-
-    return () => clearTimeout(timer);
+    }
   }, [location.pathname]);
 
   // Any route that starts with "/auth" (e.g., /auth/dashboard, /auth/contactus)
