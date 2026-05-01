@@ -1,6 +1,7 @@
 import DefaultCoverImage from "../../assets/CoverImages/BlogCover.webp";
 /*Videos */
 
+import Blogimage1 from "../../assets/Blogimages/Blogimage1.png";
 /*Cover Images */
 import AdvertisingCoverHomeImage from "../../assets/CoverImages/AdvertisingCoverHomeImage.webp";
 import BrandingCoverHomeImage from "../../assets/CoverImages/BrandingCoverHomeImage.webp";
@@ -18,9 +19,6 @@ import DigitalMarketingCoverImage from "../../assets/CoverImages/DigitalMarketin
 import MobileappCoverImage from "../../assets/CoverImages/MobileappCoverImage.png";
 import ServicesCoverImage from "../../assets/CoverImages/ServicesCoverImage.png";
 import BusinessWebsiteCover from "../../assets/CoverImages/businesswebsitecover.png";
-
-import HomeHeroCover from "../../assets/Common/Home/HomeHeroCover.webp";
-import homecoverMobile from "../../assets/Common/Home/homecoverMobile.webp";
 
 import HiringModel from "../Icons/HiringModel.webp";
 import FixedPrice from "../Icons/FixedPrice.webp";
@@ -161,7 +159,7 @@ export {
   HiringModel,
 
   /* Home */
-  HomeHeroCover,
-  homecoverMobile,
   EventHeroCover,
+
+  Blogimage1,
 };

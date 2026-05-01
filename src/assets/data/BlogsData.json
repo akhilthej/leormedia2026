@@ -1,9 +1,0 @@
-[
-  {
-    "slug": "understanding-react-hooks",
-    "title": "Understanding React Hooks",
-    "content": "<p>React Hooks are functions that let you use state and other React features without writing a class. They were introduced in React 16.8 and have since become a fundamental part of React development.</p><h3>Why Use Hooks?</h3><p>Hooks allow you to manage state and side effects in functional components, making your code cleaner and more readable.</p>",
-    "feature_image": "https://www.uxpin.com/studio/wp-content/uploads/2024/07/React-Hooks.webp",
-    "date": "2023-10-01"
-  }
-]
