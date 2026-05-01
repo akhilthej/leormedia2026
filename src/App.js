@@ -25,21 +25,6 @@ import {
 
 import seoData from "./assets/data/seo.json";
 
-import Notification from "./components/Tools/Notifications";
-
-
-import PrivateRoute from "./hooks/PrivateRoute";
-import Login from "./routes/auth/login";
-
-import AdminNavbar from "./routes/auth/Navbar/AdminNavbar.js";
-import Dashboard from "./routes/auth/dashboard";
-import AdminContactus from "./routes/auth/Admin/AdminContactus.jsx";
-import Leads from "./routes/auth/Admin/Leads.jsx";
-import PaymentHistory from "./routes/auth/PaymentHistory";
-import Renewal from "./routes/auth/Renewal";
-import WebsitesCheck from "./routes/auth/Admin/WebsitesCheck";
-import GoogelAnalytics from "./routes/auth/Admin/GoogelAnalytics.jsx";
-
 import {
   /*Web Development */
   WebDevelopment,
@@ -151,65 +136,7 @@ const routes = [
   { path: "/", element: <Home /> },
   { path: "/*", element: <Error404 /> },
 
-  { path: "/auth/login", element: <Login /> },
-  {
-    path: "/auth/dashboard",
-    element: (
-      <PrivateRoute>
-        <Dashboard />
-      </PrivateRoute>
-    ),
-  },
 
-  {
-    path: "/auth/contactus",
-    element: (
-      <PrivateRoute>
-        <AdminContactus />
-      </PrivateRoute>
-    ),
-  },
-  {
-    path: "/auth/leads",
-    element: (
-      <PrivateRoute>
-        <Leads />
-      </PrivateRoute>
-    ),
-  },
-  {
-    path: "/auth/dashboard/paymenthistory",
-    element: (
-      <PrivateRoute>
-        <PaymentHistory />
-      </PrivateRoute>
-    ),
-  },
-  {
-    path: "/auth/google-analytics",
-    element: (
-      <PrivateRoute>
-        <GoogelAnalytics />
-      </PrivateRoute>
-    ),
-  },
-
-  {
-    path: "/auth/dashboard/websitecheck",
-    element: (
-      <PrivateRoute>
-        <WebsitesCheck />
-      </PrivateRoute>
-    ),
-  },
-  {
-    path: "/auth/dashboard/renewal",
-    element: (
-      <PrivateRoute>
-        <Renewal />
-      </PrivateRoute>
-    ),
-  },
 
   { path: "/blogs", element: <Blog /> },
   { path: "/blogs/:slug", element: <BlogFullPost /> },
@@ -751,7 +678,6 @@ export function App() {
   return (
     <>
       <LogoLoader isLoading={isLoading} />
-      {isAuthRoute && <AdminNavbar />}
       {!isAuthRoute && <Navbar />}
 
       <div className="flex flex-1">

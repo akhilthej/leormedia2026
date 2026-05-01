@@ -4,17 +4,14 @@ import "./index.css";
 import App from "./App";
 import { BrowserRouter } from "react-router-dom";
 import { HelmetProvider } from "react-helmet-async";
-import { AuthProvider } from "./hooks/AuthContext";
 
 ReactDOM.render(
   <React.StrictMode>
     <BrowserRouter basename="/">
-      
-        <AuthProvider>
+
         <HelmetProvider>
           <App />
-          </HelmetProvider>
-        </AuthProvider>
+        </HelmetProvider>
     </BrowserRouter>
   </React.StrictMode>,
 
