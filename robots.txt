@@ -1,0 +1,8 @@
+User-agent: Googlebot
+Disallow: /nogooglebot/
+
+User-agent: *
+Disallow: /auth
+Allow: /
+
+Sitemap: https://leormedia.com/sitemap.xml
