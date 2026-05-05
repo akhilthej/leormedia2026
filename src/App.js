@@ -18,9 +18,6 @@ import {
   Blog,
   BlogFullPost,
   FAQ,
-  Clients,
-  Products,
-  Portfolio,
 } from "./routes/Routes";
 
 import seoData from "./assets/data/seo.json";
@@ -143,8 +140,6 @@ const routes = [
 
   { path: "/aboutus", element: <Aboutus /> },
   { path: "/careers", element: <Careers /> },
-  { path: "/clients", element: <Clients /> },
-  { path: "/products", element: <Products /> },
   { path: "/contactus", element: <Contactus /> },
 
 
@@ -157,7 +152,6 @@ const routes = [
   { path: "/services", element: <Services /> },
   { path: "/frequently-asked-questions", element: <FAQ /> },
 
-  { path: "/portfolio", element: <Portfolio /> },
 
   /*---------Events---------*/
   { path: "/services/events", element: <WebDevelopment /> },

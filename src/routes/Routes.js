@@ -16,9 +16,6 @@ import Careers from "./Careers/careers";
 import Contactus from "./Contactus.js";
 
 import Services from "./Services/Services.js";
-import Clients from "./Clients.js";
-import Products from './Products.jsx'
-import Portfolio from './Portfolio.jsx'
 
 import FAQ from "./Faqs";
 
@@ -43,7 +40,7 @@ import MultiMedia from "../routes/Services/MultiMedia/MultiMedia.jsx";
 export {
   /*Fixed */
 
-  Navbar,Portfolio,
+  Navbar,
   Footer,
   PrivacyPolicy,
   TermsnConditions,
@@ -58,7 +55,6 @@ export {
   Careers,
   ReturnPolicy,
   Services,
-  Clients,
   FAQ,
   SubPages,
 
@@ -78,5 +74,5 @@ export {
   BrandServices,
 
   /*MobileApp*/
-  MobileAppDevelopment,Products,
+  MobileAppDevelopment,
 };

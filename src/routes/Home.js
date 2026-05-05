@@ -67,76 +67,91 @@ const HomePage = () => {
   const titles = [
     "EVENTS",
     "WEDDINGS",
-    "ADVERTISING",
     "BRANDING",
+    "OUTDOOR MEDIA",
     "DIGITAL MARKETING",
-    "MULTIMEDIA",
+    "ADVERTISING",
+    "CREATIVE DESIGN",
   ];
 
   const sections = [
     {
-      title: "EVENTS",
-      subtitle: "HIGH-PERFORMANCE SOLUTIONS",
+      title: "EVENTS MANAGEMENT",
+      subtitle: "UNFORGETTABLE EXPERIENCES",
       color: "bg-gradient-to-br from-blue-900/90 to-indigo-950/90",
       number: "01",
       description:
-        "Vizag’s premier event management partner. We specialize in creating high-impact experiences for personal, corporate, and community events.",
+        "Vizag’s premier event partner. From luxury weddings to high-impact corporate launches, we handle every detail with elegance and precision.",
       image:
         "https://images.unsplash.com/photo-1501281668745-f7f57925c3b4?w=1200&auto=format&fit=crop&q=80",
       stats: [
-        { value: "250+", label: "Events Planned" },
-        { value: "45+", label: "Corporate Clients" },
-        { value: "100%", label: "Perfect Execution" },
+        { value: "500+", label: "Events Managed" },
+        { value: "10K+", label: "Happy Guests" },
+        { value: "100%", label: "Execution" },
       ],
-      cta: "View Portfolio",
+      cta: "Plan Your Event",
+      detailedServices: [
+        "Wedding Planning & Destination Weddings",
+        "Engagements, Receptions, Mehendi & Sangeet",
+        "Theme Decors & Birthday Parties",
+        "Corporate Events & Product Launches",
+        "Concerts, Award Nights & Fashion Shows",
+        "Entertainment & Artist Management",
+        "Hospitality & Photography Services",
+        "Protocol Events & Carnivals",
+      ],
     },
     {
-      title: "WEDDINGS",
-      subtitle: "NATIVE & CROSS-PLATFORM",
-      color: "bg-gradient-to-br from-purple-900/90 to-purple-950/90",
+      title: "BRANDING & OUTDOOR",
+      subtitle: "STRATEGIC VISIBILITY",
+      color: "bg-gradient-to-br from-amber-900/90 to-orange-950/90",
       number: "02",
       description:
-        "Comprehensive wedding planning services to make your special day perfect. From venue selection to decor, we handle every detail with elegance.",
-      image:
-        "https://images.unsplash.com/photo-1511795409834-ef04bbd61622?w=1200&auto=format&fit=crop&q=80",
-      stats: [
-        { value: "500+", label: "Events Managed" },
-        { value: "4.9★", label: "Average Rating" },
-        { value: "10K+", label: "Happy Guests" },
-      ],
-      cta: "Start Your Project",
-    },
-    {
-      title: "DIGITAL MARKETING",
-      subtitle: "GROW YOUR ONLINE PRESENCE",
-      color: "bg-gradient-to-br from-green-900/90 to-teal-950/90",
-      number: "03",
-      description:
-        "Comprehensive digital marketing strategies including SEO, social media, PPC, and content marketing to boost your brand visibility.",
-      image:
-        "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=1200&auto=format&fit=crop&q=80",
-      stats: [
-        { value: "300%", label: "ROI Increase" },
-        { value: "24/7", label: "Campaign Monitoring" },
-        { value: "50+", label: "Industries Served" },
-      ],
-      redirect: "Get Free Audit",
-    },
-    {
-      title: "BRANDING",
-      subtitle: "BUILDING LASTING IDENTITIES",
-      color: "bg-gradient-to-br from-amber-900/90 to-orange-950/90",
-      number: "04",
-      description:
-        "Developing compelling brand identities, logos, and visual systems that resonate with your target audience and stand out in the market.",
+        "Dominate the physical landscape. We provide strategic outdoor media and branding solutions that ensure your brand is seen by millions.",
       image:
         "https://t4.ftcdn.net/jpg/05/82/97/27/360_F_582972760_T0T4qTwlZDolGql8CJaD1kMIPrG4vIew.jpg",
       stats: [
         { value: "200+", label: "Brands Built" },
-        { value: "360°", label: "Brand Strategy" },
-        { value: "100%", label: "Client Satisfaction" },
+        { value: "360°", label: "Media Coverage" },
+        { value: "50+", label: "Media Formats" },
       ],
-      cta: "See Case Studies",
+      cta: "Grow Your Brand",
+      detailedServices: [
+        "Billboards, Unipoles & Building Wraps",
+        "Transit Media (Cabs, Buses, Mobile Vans, Trains)",
+        "Airport & Railway Station Branding",
+        "Mall Branding & Flyover Pillars",
+        "Bus Shelters & Strategic Kiosks",
+        "Print Media (Newspapers & Magazines)",
+        "Electronic Media (TV, Radio, Theater Ads)",
+        "Bench Branding & Airport Trolleys",
+      ],
+    },
+    {
+      title: "ADVERTISING & DIGITAL",
+      subtitle: "GROW YOUR ONLINE PRESENCE",
+      color: "bg-gradient-to-br from-green-900/90 to-teal-950/90",
+      number: "03",
+      description:
+        "Data-driven marketing combined with creative excellence. We help brands scale through smart digital strategies and stunning visual identities.",
+      image:
+        "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=1200&auto=format&fit=crop&q=80",
+      stats: [
+        { value: "100+", label: "Campaigns" },
+        { value: "300%", label: "ROI Increase" },
+        { value: "24/7", label: "Monitoring" },
+      ],
+      cta: "Start Growing",
+      detailedServices: [
+        "Branding Audit, Strategy & Identity",
+        "SEO, SEM & PPC (Google & Meta Ads)",
+        "Social Media Management & PR",
+        "Content Marketing & Influencer Outreach",
+        "Media Buying & Digital Positioning",
+        "Creative Design (Social Media, Posters, Labels)",
+        "Website & App Development",
+        "Brand Activations & Positioning",
+      ],
     },
   ];
 
@@ -174,9 +189,9 @@ const HomePage = () => {
             >
               <h2 className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-white text-center mt-28">
                 <span className="block">
-                  Creating Extraordinary Events
+                  From Memorable Events to
                   <span className="block text-primary">
-                    & Digital Success Stories.
+                    Powerful Brand Growth.
                   </span>
                 </span>
               </h2>
@@ -189,7 +204,7 @@ const HomePage = () => {
                   }`}
               >
                 <p className="text-sm md:text-base mx-auto text-white font-medium text-center">
-                  Since 2018
+                  We plan, create, and promote — all in one place.
                 </p>
               </div>
             </div>
@@ -217,38 +232,34 @@ const HomePage = () => {
                       </span>
                     </h2>
                     <p className="text-xs sm:text-sm text-white mt-2 font-medium">
-                      Looking for high-impact events tailored for your
-                      celebration?
+                      Creating unforgettable experiences for every occasion.
                     </p>
                   </div>
                 </Link>
               </div>
 
-              {/* 2. Mobile App Development */}
+              {/* 2. Marketing */}
               <div
                 className={`transform transition-all duration-700 ease-out delay-700 ${isVisible
                   ? "translate-y-0 opacity-100"
                   : "translate-y-10 opacity-0"
                   }`}
               >
-                <a
-                  href="https://www.vivahamco.com/"
-                  target="_blank"
-                  rel="noopener noreferrer"
+                <Link
+                  to="/services/digitalmarketing"
                   className="group block h-full"
                 >
                   <div className="h-full">
                     <h2 className="leading-tight text-right font-TuskerGrotesk text-3xl sm:text-4xl font-bold tracking-wide text-white group-hover:text-primary transition-all duration-300">
                       <span className="block">
-                        Weddings
+                        Growth
                       </span>
                     </h2>
-                    <p className="text-xs sm:text-sm text-white mt-2 font-medium">
-                      Planning your dream wedding? Let's turn your vision into
-                      reality!
+                    <p className="text-xs sm:text-sm text-white mt-2 font-medium text-right">
+                      Powerful branding and digital marketing strategies.
                     </p>
                   </div>
-                </a>
+                </Link>
               </div>
             </div>
 
@@ -298,12 +309,11 @@ const HomePage = () => {
                   <div>
                     <h2 className="leading-tight font-TuskerGrotesk text-4xl xl:text-5xl font-bold tracking-wide text-white group-hover:text-primary transition-all duration-300">
                       <span className="block">
-                        Events
+                        Plan Event
                       </span>
                     </h2>
                     <p className="text-sm xl:text-base text-white mt-2">
-                      Looking for high-impact events tailored for your
-                      celebration?
+                      Creating unforgettable experiences for weddings and celebrations.
                     </p>
                   </div>
                 </Link>
@@ -347,24 +357,21 @@ const HomePage = () => {
                   : "translate-x-10 opacity-0"
                   } flex justify-end`}
               >
-                <a
-                  href="https://www.vivahamco.com/"
-                  target="_blank"
-                  rel="noopener noreferrer"
+                <Link
+                  to="/services/digitalmarketing"
                   className="group block max-w-xs xl:max-w-sm text-right"
                 >
                   <div>
                     <h2 className="leading-tight font-TuskerGrotesk text-4xl xl:text-5xl font-bold tracking-wide text-white group-hover:text-primary transition-all duration-300">
                       <span className="block">
-                        Weddings
+                        Grow Business
                       </span>
                     </h2>
                     <p className="text-sm xl:text-base text-white mt-2">
-                      Planning your dream wedding? Let's turn your vision into
-                      reality!
+                      Scale your brand with strategic advertising and digital marketing.
                     </p>
                   </div>
-                </a>
+                </Link>
               </div>
             </div>
           </div>
@@ -376,69 +383,8 @@ const HomePage = () => {
               : "translate-y-10 opacity-0"
               } mt-8 md:mt-12 lg:mt-0 lg:pt-8`}
           >
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 items-center">
-              {/* Quick Links */}
-              <div className="text-white flex items-center justify-center lg:justify-start gap-6 text-sm md:text-base font-medium">
-                <Link
-                  to="/products"
-                  className="hover:text-primary transition-all duration-300 hover:scale-105 flex items-center gap-2 group"
-                >
-                  PRODUCTS
-                  <svg
-                    className="w-4 h-4 transform group-hover:translate-x-1 transition-transform duration-300"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth={2}
-                      d="M9 5l7 7-7 7"
-                    />
-                  </svg>
-                </Link>
-                <span className="h-4 w-px bg-gray-400" />
-                <Link
-                  to="/clients"
-                  className="hover:text-primary transition-all duration-300 hover:scale-105 flex items-center gap-2 group"
-                >
-                  CLIENTS
-                  <svg
-                    className="w-4 h-4 transform group-hover:translate-x-1 transition-transform duration-300"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth={2}
-                      d="M9 5l7 7-7 7"
-                    />
-                  </svg>
-                </Link>
-                <span className="h-4 w-px bg-gray-400" />
-                <Link
-                  to="/portfolio"
-                  className="hover:text-primary transition-all duration-300 hover:scale-105 flex items-center gap-2 group"
-                >
-                  PORTFOLIO
-                  <svg
-                    className="w-4 h-4 transform group-hover:translate-x-1 transition-transform duration-300"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth={2}
-                      d="M9 5l7 7-7 7"
-                    />
-                  </svg>
-                </Link>
-              </div>
+            <div className="grid grid-cols-1 gap-6 items-center">
+          
 
               {/* Locations */}
               <div className="flex items-center justify-center lg:justify-end gap-3 text-[12px] text-orange-500 font-medium">
@@ -468,15 +414,13 @@ const HomePage = () => {
           {/* Section Header */}
           <div className="text-center mb-12 md:mb-20">
             <span className="inline-block px-4 py-1.5 bg-primary/10 text-primary rounded-full text-sm font-semibold mb-4">
-              OUR STORY & DIFFERENCE
+              TRUSTED PARTNER
             </span>
             <h2 className="text-3xl md:text-5xl font-bold mb-6">
-              Why Choose{" "}
-              <span className="text-primary">Leor Media</span>
+              Why <span className="text-primary">Leor Media?</span>
             </h2>
             <p className="text-gray-600 text-lg max-w-3xl mx-auto">
-              More than just an agency, we are your partners in creating
-              unforgettable experiences and digital excellence.
+              One team for events + marketing. We combine creative execution with strategic growth to build your brand and celebrations.
             </p>
           </div>
 
@@ -485,24 +429,21 @@ const HomePage = () => {
             <div>
               <div className="mb-10">
                 <h3 className="text-2xl md:text-3xl font-bold mb-6">
-                  Your Vision, Our Expertise –{" "}
-                  <span className="text-primary">Perfectly Executed.</span>
+                  One Team for Events +{" "}
+                  <span className="text-primary">Marketing Success.</span>
                 </h3>
                 <p className="text-gray-600 mb-6">
-                  At Leor Media, we transform your vision into
-                  perfectly executed experiences. Founded in 2017, we combine 
-                  creative event management with cutting-edge digital solutions 
-                  to help your brand and celebrations stand out.
+                  Leor Media is a unique hybrid agency specializing in both 
+                  Event Management and Strategic Branding. We believe that 
+                  great events build memories, and great marketing builds 
+                  futures. We provide both under one roof.
                 </p>
                 <p className="text-gray-600">
-                  From a small team to Vizag's premier event and digital 
-                  agency, our journey is built on a foundation of 
-                  technical expertise, creative innovation, and an unwavering 
-                  commitment to client success. We have delivered
-                  <span className="font-semibold text-black">
-                    hundreds of successful events and projects
-                  </span>
-                  across diverse industries.
+                  Whether you are planning a luxury wedding or launching 
+                  a nationwide marketing campaign, our team ensures 
+                  meticulous execution and creative innovation. We have 
+                  managed hundreds of campaigns and events, making us 
+                  one of the most trusted names in the region.
                 </p>
               </div>
 
@@ -554,12 +495,12 @@ const HomePage = () => {
                   </div>
                   <div>
                     <h4 className="text-xl font-semibold mb-2">
-                      Quality First Approach
+                      Creative + Execution Focused
                     </h4>
                     <p className="text-gray-600">
-                      Every line of code, design, and strategy is crafted with
-                      meticulous attention to detail to not just meet, but
-                      exceed expectations.
+                      We don't just plan; we execute with precision. Every detail 
+                      is crafted to resonate with your audience and leave a 
+                      lasting impression.
                     </p>
                   </div>
                 </div>
@@ -570,12 +511,12 @@ const HomePage = () => {
                   </div>
                   <div>
                     <h4 className="text-xl font-semibold mb-2">
-                      Client-Centric Partnership
+                      Affordable & Customized
                     </h4>
                     <p className="text-gray-600">
-                      We view every project as a partnership. Your success is
-                      our success, and we work collaboratively to drive real
-                      business value.
+                      Quality doesn't have to be expensive. We provide tailored 
+                      solutions that fit your budget while maintaining the 
+                      highest standards of excellence.
                     </p>
                   </div>
                 </div>
@@ -586,12 +527,12 @@ const HomePage = () => {
                   </div>
                   <div>
                     <h4 className="text-xl font-semibold mb-2">
-                      Innovation & Adaptability
+                      Strong Local Experience
                     </h4>
                     <p className="text-gray-600">
-                      We stay ahead of technological trends to provide
-                      cutting-edge solutions that give our clients a competitive
-                      advantage.
+                      With years of experience in Andhra Pradesh and Telangana, 
+                      we understand the local market and culture better than 
+                      anyone else.
                     </p>
                   </div>
                 </div>
@@ -604,18 +545,29 @@ const HomePage = () => {
           {/* CTA Section */}
           <div className="text-center mt-20 pt-10 border-t border-gray-200">
             <h3 className="text-2xl md:text-3xl font-bold mb-6">
-              Ready to Build Something Amazing Together?
+              Our Professional Process
             </h3>
-            <p className="text-gray-600 mb-8 max-w-2xl mx-auto">
-              Whether you need to plan a grand wedding, a corporate 
-              conference, or build a robust digital presence, we 
-              have the expertise to bring your vision to life.
-            </p>
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mb-12">
+              {[
+                { step: "01", title: "Understand", desc: "Requirement Analysis" },
+                { step: "02", title: "Plan", desc: "Strategy & Design" },
+                { step: "03", title: "Execution", desc: "Meticulous Implementation" },
+                { step: "04", title: "Delivery", desc: "Final Result & Support" }
+              ].map((item, idx) => (
+                <div key={idx} className="flex flex-col items-center">
+                  <div className="w-12 h-12 bg-primary text-white rounded-full flex items-center justify-center font-bold mb-4">
+                    {item.step}
+                  </div>
+                  <h4 className="font-bold text-lg">{item.title}</h4>
+                  <p className="text-sm text-gray-500">{item.desc}</p>
+                </div>
+              ))}
+            </div>
             <Link
               to="/contactus"
               className="inline-flex items-center px-8 py-4 bg-primary text-white font-semibold rounded-lg hover:bg-primary/90 transition-all duration-300 hover:scale-105"
             >
-              Start Your Free Consultation
+              Let's Create Something Amazing
               <svg
                 className="w-5 h-5 ml-3"
                 fill="none"
@@ -677,6 +629,18 @@ const HomePage = () => {
                   <p className="text-lg md:text-xl text-white/90 mb-6 md:mb-8 leading-relaxed max-w-lg">
                     {sec.description}
                   </p>
+
+                  {/* Detailed Services List */}
+                  {sec.detailedServices && (
+                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-2 mb-8">
+                      {sec.detailedServices.map((service, idx) => (
+                        <div key={idx} className="flex items-center text-white/80 text-sm">
+                          <span className="w-1.5 h-1.5 bg-primary rounded-full mr-2"></span>
+                          {service}
+                        </div>
+                      ))}
+                    </div>
+                  )}
 
                   {/* Stats for Operations */}
                   {sec.stats && (
