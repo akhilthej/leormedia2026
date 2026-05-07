@@ -5,6 +5,7 @@ import { HomeCommunityCover } from "../../../assets/data/Imagedata";
 import { GlobalData } from "../../../assets/data/GlodalData";
 import seoData from "../../../assets/data/seo.json";
 import { Helmet } from "react-helmet-async";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { FaArrowRight, FaPhone, FaQuestion, FaWhatsapp } from "react-icons/fa";
 
 const { title, description, keywords, canonical, ogImage } =
@@ -95,14 +96,20 @@ const DigitalMarketing = () => {
             {DigitalMarketingCompany.services.map((service, index) => (
               <div
                 key={index}
-                className="text-center p-3 bg-gray-50 rounded-lg border hover:bg-white transition-colors"
+                className="text-center p-3 bg-gray-50 rounded-lg border hover:bg-white transition-colors flex flex-col items-center"
               >
-                <img
-                  src={service.icon}
-                  className="w-6 h-6 mx-auto mb-2"
-                  alt={service.title}
-                  loading="lazy"
-                />
+                <div className="w-10 h-10 flex items-center justify-center text-primary mb-2">
+                  {typeof service.icon === "string" ? (
+                    <img
+                      src={service.icon}
+                      className="w-8 h-8 object-contain"
+                      alt={service.title}
+                      loading="lazy"
+                    />
+                  ) : (
+                    <FontAwesomeIcon icon={service.icon} className="text-2xl" />
+                  )}
+                </div>
                 <p className="font-medium text-xs md:text-sm mb-1">
                   {service.title}
                 </p>

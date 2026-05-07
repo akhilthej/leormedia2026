@@ -5,7 +5,6 @@ import {
   AdvertisingImage,
   GraphicDesignImage,
   BrandingImage,
-  MobileAppDevImage,
   WebDevelopmentImage,
 } from "../assets/data/Imagedata";
 
@@ -14,14 +13,12 @@ import {
   Advertisingicon,
   Graphicdesignicon,
   Webdevelopmenticon,
-  Mobileappicon,
   Brandingicon,
 } from "../assets/data/icon_data";
 
 const icons = {
   "Digital Marketing": DigitalmarketingIcon,
   "Web Development": Webdevelopmenticon,
-  "Mobile App Development": Mobileappicon,
   Branding: Brandingicon,
   "Graphic Design": Graphicdesignicon,
   Advertising: Advertisingicon,
@@ -37,7 +34,6 @@ const ServicesTab = () => {
   const images = {
     "Digital Marketing": DigitalMarketingImage,
     "Web Development": WebDevelopmentImage,
-    "Mobile App Development": MobileAppDevImage,
     Branding: BrandingImage,
     "Graphic Design": GraphicDesignImage,
     Advertising: AdvertisingImage,
@@ -48,8 +44,6 @@ const ServicesTab = () => {
       "Digital marketing involves promoting products or services through digital channels.",
     "Web Development":
       "Web development is the work involved in developing a website for the Internet.",
-    "Mobile App Development":
-      "Mobile app development is the process of creating software applications for mobile devices.",
     Branding:
       "Branding is the process of creating a unique name and image for a product in the consumer's mind.",
     "Graphic Design":

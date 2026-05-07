@@ -5,13 +5,11 @@ import {
   Advertisingicon,
   Graphicdesignicon,
   Webdevelopmenticon,
-  Mobileappicon,
   Brandingicon,
 } from "../../assets/data/icon_data";
 import {
-  eventsLink,
+  weddingplannersLink,
   digitalMarketingLinks,
-  multimediaLinks,
   brandingLinks,
   advertisingLinks,
 } from "./MenuItems";
@@ -21,25 +19,20 @@ import {
   faEnvelope,
   faChevronDown,
   faChevronUp,
-  faGlobe,
-  faMobile,
   faRing,
   faNetworkWired,
-  faPaintBrush,
   faTrademark,
   faBullhorn,
-  faTools,
   faCommentDots,
   faRightToBracket,
   faTimes,
+  faBlog,
 } from "@fortawesome/free-solid-svg-icons";
 import NavbarLogo from "../../assets/LeormediaLogo.svg";
-import {
-  faFacebookF,
-  faInstagram,
-  faTwitter,
-} from "@fortawesome/free-brands-svg-icons";
+
 import { GlobalData } from "../../assets/data/GlodalData";
+import { FaFacebookF, FaInstagram, FaLinkedinIn, FaPinterestP } from "react-icons/fa";
+import { FaXTwitter } from "react-icons/fa6";
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
@@ -259,74 +252,52 @@ const Navbar = () => {
     link2: DigitalmarketingIcon,
     link3: Brandingicon,
     link4: Advertisingicon,
-    link5: Mobileappicon,
     link6: Graphicdesignicon,
   };
 
   const menuConfigs = [
-    {
-      key: "Events",
-      title: "Events",
-      href: "/services/events",
-      links: eventsLink,
-      imageSrc: NavImages.link1,
-      icon: faGlobe,
-    },
+  
     {
       key: "weddings",
       title: "Wedding Planners",
-      href: "https://www.vivahamco.com/",
-      links: [],
+      href: "/services/wedding-planners",
+      links: weddingplannersLink,
+      imageSrc: NavImages.link1,
       icon: faRing,
     },
     {
       key: "digitalMarketing",
       title: "Digital Media Marketing",
-      href: "/services/digital-marketing-company",
+      href: "/services/digital-media-marketing",
       links: digitalMarketingLinks,
       imageSrc: NavImages.link2,
       icon: faNetworkWired,
     },
     {
-      key: "multimedia",
-      title: "Multimedia",
-      href: "/services/multimedia-company",
-      links: multimediaLinks,
-      imageSrc: NavImages.link6,
-      icon: faPaintBrush,
-    },
-    {
       key: "branding",
       title: "Branding",
-      href: "/services/branding-comapny",
+      href: "/services/branding",
       links: brandingLinks,
       imageSrc: NavImages.link3,
       icon: faTrademark,
     },
     {
       key: "advertising",
-      title: "Advertising",
-      href: "/services/advertising-company",
+      title: "Advertisement",
+      href: "/services/advertisement",
       links: advertisingLinks,
       imageSrc: NavImages.link4,
       icon: faBullhorn,
     },
 
+
     {
-      key: "contactus",
-      title: "Get in-Touch",
-      href: "/contactus",
-      links: [],
-      imageSrc: null,
-      icon: faCommentDots,
-    },
-    {
-      key: "contactus",
+      key: "blogs",
       title: "Blogs",
       href: "/blogs",
       links: [],
       imageSrc: null,
-      icon: faCommentDots,
+      icon: faBlog,
     },
     {
       key: "AboutUs",
@@ -335,6 +306,14 @@ const Navbar = () => {
       links: [],
       imageSrc: null,
       icon: faRightToBracket,
+    },
+    {
+      key: "contactus",
+      title: "Get in-Touch",
+      href: "/contactus",
+      links: [],
+      imageSrc: null,
+      icon: faCommentDots,
     },
 
   ];
@@ -353,9 +332,81 @@ const Navbar = () => {
 
   return (
     <section
-      className={`origin-top-right fixed  w-full top-0 z-50 shadow-md backdrop-blur-sm transition-colors duration-500 ${scrolled ? "bg-white/95" : "bg-white"
+      className={`origin-top-right fixed w-full top-0 z-50 shadow-md backdrop-blur-sm transition-colors duration-500 ${scrolled ? "bg-white/95" : "bg-white"
         }`}
     >
+      {/* Top Contact Bar */}
+      <div className="bg-primary-100 py-2 px-4 text-[14px] text-white flex justify-between items-center border-b border-gray-900 overflow-hidden relative z-50">
+        <div className="flex items-center gap-4">
+          <a
+            href={`tel:${GlobalData.company.companyPhone}`}
+            className="text-[12px] sm:text-[14px] flex items-center gap-2 hover:text-yellow-500 transition-colors"
+          >
+            <FontAwesomeIcon icon={faPhone} className="text-[12px]" />
+            <span className="hidden sm:inline">{GlobalData.company.companyPhone}</span>
+          </a>
+          <a
+            href={`mailto:${GlobalData.company.companyEmail}`}
+            className="text-[12px] sm:text-[14px] flex items-center gap-2 hover:text-yellow-500 transition-colors"
+          >
+            <FontAwesomeIcon icon={faEnvelope} className="text-[14px]" />
+            <span className="hidden sm:inline">{GlobalData.company.companyEmail}</span>
+          </a>
+        </div>
+
+        <div className="relative flex-1 overflow-hidden min-h-[20px] mx-4 hidden lg:block">
+          <div className="animate-scroll whitespace-nowrap text-xs sm:text-sm">
+            Your vision. Our code. Backed by 10+ years of expertise to build and scale your digital presence.
+          </div>
+        </div>
+
+        <div className="flex items-center space-x-4">
+          <div className="flex space-x-4">
+            <a
+              href={GlobalData.company.companyfacebook}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-blue-500 transition-colors duration-200"
+            >
+              <FaFacebookF className="text-[14px]" />
+            </a>
+            <a
+              href={GlobalData.company.companyinstagram}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-pink-600 transition-colors duration-200"
+            >
+              <FaInstagram className="text-[14px]" />
+            </a>
+            <a
+              href={GlobalData.company.companytwitter}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-black transition-colors duration-200"
+            >
+              <FaXTwitter className="text-[14px]" />
+            </a>
+            <a
+              href={GlobalData.company.companylinkedin}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-blue-700 transition-colors duration-200"
+            >
+              <FaLinkedinIn className="text-[14px]" />
+            </a>
+            <a
+              href={GlobalData.company.companypinterest}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-red-600 transition-colors duration-200"
+            >
+              <FaPinterestP className="text-[14px]" />
+            </a>
+
+          </div>
+        </div>
+      </div>
+
       {/* Main navbar */}
       <div className="sm:px-4 w-full h-18 flex justify-between items-center text-gray-800 relative">
         <a href="/" className="z-50">
@@ -369,7 +420,7 @@ const Navbar = () => {
         <div className="justify-end">
           <ul className="flex items-center">
             {/* Dynamic desktop menu items */}
-            {menuConfigs.slice(0, -1).map((menu) => (
+            {menuConfigs.slice(0, 8).map((menu) => (
               <li
                 key={menu.key}
                 className="relative inline-block text-left hidden lg:block"
@@ -380,17 +431,22 @@ const Navbar = () => {
                   handleMouseLeave(menu.key, menu.links.length > 0)
                 }
               >
-                <div className="inline-flex font-normal antialiased justify-center items-center gap-1 w-full rounded-md px-3 py-2 text-[13px] text-gray-800 hover:text-yellow-500 cursor-pointer transition-colors">
+                <div className="inline-flex flex-col font-normal antialiased justify-center items-center gap-1 w-full rounded-md px-3 py-1 text-[11px] text-gray-800 hover:text-yellow-500 cursor-pointer transition-colors group">
+                  <FontAwesomeIcon
+                    icon={menu.icon}
+                    className="text-lg mb-0.5 text-gray-500 group-hover:text-yellow-500 transition-colors"
+                  />
+                  <div className="flex items-center">
+                    <a href={menu.href} className="font-semibold">{menu.title}</a>
 
-                  <a href={menu.href}>{menu.title}</a>
-
-                  {/* Toggle Chevron Up/Down */}
-                  {menu.links.length > 0 && (
-                    <FontAwesomeIcon
-                      icon={openMenus[menu.key] ? faChevronUp : faChevronDown}
-                      className="text-[10px] ml-1 transition-transform duration-200"
-                    />
-                  )}
+                    {/* Toggle Chevron Up/Down */}
+                    {menu.links.length > 0 && (
+                      <FontAwesomeIcon
+                        icon={openMenus[menu.key] ? faChevronUp : faChevronDown}
+                        className="text-[9px] ml-1 transition-transform duration-200"
+                      />
+                    )}
+                  </div>
                 </div>
 
                 <DropdownMenu
@@ -473,8 +529,8 @@ const Navbar = () => {
 
                     <div
                       className={`overflow-hidden transition-all duration-300 ease-in-out ${openMobileSubmenus[menu.key]
-                          ? "max-h-[1000px] opacity-100 mb-4"
-                          : "max-h-0 opacity-0"
+                        ? "max-h-[1000px] opacity-100 mb-4"
+                        : "max-h-0 opacity-0"
                         }`}
                     >
                       <div className="ml-8 border-l border-gray-200 pl-4">
@@ -580,7 +636,7 @@ const Navbar = () => {
                 className="w-10 h-10 rounded-full bg-gray-100 flex items-center justify-center text-gray-600 hover:bg-blue-600 hover:text-white transition-all"
                 onClick={handleLinkClick}
               >
-                <FontAwesomeIcon icon={faFacebookF} />
+                <FaFacebookF />
               </a>
               <a
                 href={GlobalData.company.companyinstagram}
@@ -589,17 +645,36 @@ const Navbar = () => {
                 className="w-10 h-10 rounded-full bg-gray-100 flex items-center justify-center text-gray-600 hover:bg-pink-600 hover:text-white transition-all"
                 onClick={handleLinkClick}
               >
-                <FontAwesomeIcon icon={faInstagram} />
+                <FaInstagram />
               </a>
               <a
                 href={GlobalData.company.companytwitter}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-10 h-10 rounded-full bg-gray-100 flex items-center justify-center text-gray-600 hover:bg-sky-500 hover:text-white transition-all"
+                className="w-10 h-10 rounded-full bg-gray-100 flex items-center justify-center text-gray-600 hover:bg-black hover:text-white transition-all"
                 onClick={handleLinkClick}
               >
-                <FontAwesomeIcon icon={faTwitter} />
+                <FaXTwitter />
               </a>
+              <a
+                href={GlobalData.company.companylinkedin}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-10 h-10 rounded-full bg-gray-100 flex items-center justify-center text-gray-600 hover:bg-blue-700 hover:text-white transition-all"
+                onClick={handleLinkClick}
+              >
+                <FaLinkedinIn />
+              </a>
+              <a
+                href={GlobalData.company.companypinterest}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-10 h-10 rounded-full bg-gray-100 flex items-center justify-center text-gray-600 hover:bg-red-600 hover:text-white transition-all"
+                onClick={handleLinkClick}
+              >
+                <FaPinterestP />
+              </a>
+
             </div>
           </div>
         </div>

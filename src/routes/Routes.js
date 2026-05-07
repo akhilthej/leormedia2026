@@ -19,7 +19,7 @@ import Services from "./Services/Services.js";
 import FAQ from "./Faqs";
 
 import SubPages from "../routes/Services/SubPages.js";
-import WebDevelopment from "../routes/Services/WebDevelopment/Webdevelopment";
+import WeddingPlanners from "./Services/WeddingPlanners/WeddingPlanners.jsx";
 
 /*Advertising */
 import Advertising from "../routes/Services/Advertising/Advertising";
@@ -30,11 +30,6 @@ import BrandServices from "../routes/Services/BrandServices/BrandServices";
 /*Digital marketing */
 import DigitalMarketing from "../routes/Services/DigitalMarketing/DigitalMarketing";
 
-/*Mobile App Development */
-import MobileAppDevelopment from "../routes/Services/MobileAppDevelopment/MobileAppDevelopment";
-/*Graphic Design */
-
-import MultiMedia from "../routes/Services/MultiMedia/MultiMedia.jsx";
 
 export {
   /*Fixed */
@@ -57,13 +52,13 @@ export {
   SubPages,
 
   /*Web Development */
-  WebDevelopment,
+  WeddingPlanners,
 
   /*Digital marketing */
   DigitalMarketing,
 
   /*Graphic Designing */
-  MultiMedia,
+
 
   /*Advertising*/
   Advertising,
@@ -71,6 +66,4 @@ export {
   /*Branding*/
   BrandServices,
 
-  /*MobileApp*/
-  MobileAppDevelopment,
 };

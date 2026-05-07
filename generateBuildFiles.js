@@ -31,10 +31,6 @@ function addRoute(url) {
     
     // Skip dynamic or wildcard routes
     if (pathname.includes(":") || pathname.includes("*")) return;
-    
-    // Skip auth routes (admin only)
-    if (pathname.startsWith("/auth")) return;
-
     routes.add(pathname);
   } catch (e) {
     // Ignore invalid URLs

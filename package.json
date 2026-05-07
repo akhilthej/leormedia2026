@@ -64,7 +64,6 @@
   "reactSnap": {
     "include": [
       "/",
-      "/Careers",
       "/Legal/disclaimer",
       "/Legal/privacy-policy",
       "/Legal/return-policy",
@@ -72,7 +71,6 @@
       "/Legal/terms-and-conditions",
       "/aboutus",
       "/blogs",
-      "/careers",
       "/contactus",
       "/frequently-asked-questions",
       "/services",

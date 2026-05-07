@@ -12,28 +12,28 @@ const ImageSlider = () => {
   const images = [
     {
       url: WebDevelopmentCoverHomeImage,
-      title: "Events",
-      description: "Create stunning websites, engage, grow online.",
+      title: "Wedding Planners",
+      description: "Create stunning weddings, engage, grow memories.",
       button1: {
         text: "Get Quotation",
-        link: "/services/events",
+        link: "/services/wedding-planners",
       },
       button2: {
         text: "Contact us",
-        link: "https://api.whatsapp.com/send?phone=919666643456&text=Hi,%20need%20Detials%20Regarding%20Events",
+        link: "https://api.whatsapp.com/send?phone=919666643456&text=Hi,%20need%20Details%20Regarding%20Wedding%20Planners",
       },
     },
     {
       url: DigiatalMarketingCoverHomeImage,
-      title: "Digital Marketing",
+      title: "Digital Media Marketing",
       description: "Boost brands, reach audiences, measure results.",
       button1: {
         text: "Learn More",
-        link: "/services/digital-marketing-company",
+        link: "/services/digital-media-marketing",
       },
       button2: {
         text: "Contact Us",
-        link: "https://api.whatsapp.com/send?phone=919666643456&text=Hi,%20need%20Detials%20Regarding%20DigitalMarketing",
+        link: "https://api.whatsapp.com/send?phone=919666643456&text=Hi,%20need%20Details%20Regarding%20DigitalMediaMarketing",
       },
     },
     {
@@ -42,11 +42,11 @@ const ImageSlider = () => {
       description: "Design visuals, convey messages, inspire creativity.",
       button1: {
         text: "Explore",
-        link: "/services/multimedia-company",
+        link: "/contactus",
       },
       button2: {
         text: "Contact Us",
-        link: "https://api.whatsapp.com/send?phone=919666643456&text=Hi,%20need%20Detials%20Regarding%20GraphicDesigning",
+        link: "https://api.whatsapp.com/send?phone=919666643456&text=Hi,%20need%20Details%20Regarding%20GraphicDesigning",
       },
     },
     {
@@ -55,24 +55,24 @@ const ImageSlider = () => {
       description: "Craft identities, build trust, leave impressions.",
       button1: {
         text: "Learn More",
-        link: "/services/branding-comapny",
+        link: "/services/branding",
       },
       button2: {
         text: "Contact us",
-        link: "https://api.whatsapp.com/send?phone=919666643456&text=Hi,%20need%20Detials%20Regarding%20Branding",
+        link: "https://api.whatsapp.com/send?phone=919666643456&text=Hi,%20need%20Details%20Regarding%20Branding",
       },
     },
     {
       url: AdvertisingCoverHomeImage,
-      title: "Advertising",
+      title: "Advertisement",
       description: "Promote products, captivate audiences, drive sales.",
       button1: {
         text: "Learn More",
-        link: "/services/advertising-company",
+        link: "/services/advertisement",
       },
       button2: {
         text: "Contact us",
-        link: "https://api.whatsapp.com/send?phone=919666643456&text=Hi,%20need%20Detials%20Regarding%20Advertising",
+        link: "https://api.whatsapp.com/send?phone=919666643456&text=Hi,%20need%20Details%20Regarding%20Advertisement",
       },
     },
   ];

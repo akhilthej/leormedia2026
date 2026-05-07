@@ -11,14 +11,13 @@ import WebDevelopmentCoverHomeImage from "../../assets/CoverImages/WebDevelopmen
 import BlogCoverimage from "../../assets/CoverImages/BlogCover.webp";
 import homepage from "../../assets/CoverImages/homepage.webp";
 import EventHeroCover from "../../assets/CoverImages/EventHeroCover.png";
-import WebDesigningCoverImage from "../../assets/CoverImages/WebDesigningCoverImage.png";
+import WeddingPlannersCoverimage from "../../assets/CoverImages/WeddingPlannersCoverimage.png";
 import GraphicDesigningCoverImage from "../../assets/CoverImages/GraphicDesigningCoverImage.png";
 import AdvertisitngCoverImage from "../../assets/CoverImages/AdvertisitngCoverImage.png";
 import BrandingCoverImage from "../../assets/CoverImages/BrandingCoverImage.png";
 import DigitalMarketingCoverImage from "../../assets/CoverImages/DigitalMarketingCoverImage.png";
-import MobileappCoverImage from "../../assets/CoverImages/MobileappCoverImage.png";
 import ServicesCoverImage from "../../assets/CoverImages/ServicesCoverImage.png";
-import BusinessWebsiteCover from "../../assets/CoverImages/businesswebsitecover.png";
+import WeddingCoverImage from "../../assets/CoverImages/WeddingCoverImage.webp";
 
 import HiringModel from "../Icons/HiringModel.webp";
 import FixedPrice from "../Icons/FixedPrice.webp";
@@ -29,7 +28,6 @@ import DigitalMarketingImage from "../Images/DigitalMarketingImage.webp";
 import AdvertisingImage from "../Images/AdvertisingImage.webp";
 import BrandingImage from "../Images/BrandingImage.webp";
 import GraphicDesignImage from "../Images/GraphicDesignImage.webp";
-import MobileAppDevImage from "../Images/MobileAppDevImage.webp";
 import WebDevelopmentImage from "../Images/WebDevelopmentImage.webp";
 
 import GraphicDesignBG from "../Images/GraphicDesignBG.webp";
@@ -44,21 +42,18 @@ import CEO_OriginalImage from "../Aboutus/CEO_OriginalImage.webp";
 export {
   DefaultCoverImage,
   homepage,
-  WebDesigningCoverImage,
+  WeddingPlannersCoverimage,
   GraphicDesigningCoverImage,
   AdvertisitngCoverImage,
   BrandingCoverImage,
   DigitalMarketingCoverImage,
-  MobileappCoverImage,
   ServicesCoverImage,
-  BusinessWebsiteCover,
   HomeCommunityCover,
   aboutcover,
   DigitalMarketingImage,
   AdvertisingImage,
   GraphicDesignImage,
   BrandingImage,
-  MobileAppDevImage,
   WebDevelopmentImage,
   GraphicDesignBG,
   ContactUsCover,
@@ -81,5 +76,5 @@ export {
   /* Home */
   EventHeroCover,
 
-  Blogimage1,
+  Blogimage1, WeddingCoverImage,
 };

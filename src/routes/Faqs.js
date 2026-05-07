@@ -1,11 +1,10 @@
 import React, { useState, useMemo } from "react";
 import { HiChevronDown, HiSearch } from "react-icons/hi";
 import {
-  EventDetailPageData,
-  MobileAppDesignDetails,
-  EcommerceAppDevelopmentDetails,
-  WebDesignPageDetails,
-  UserInterfaceDesignPageDetails,
+  GenericWeddingPlannersDetailPageData,
+  GenericDigitalMediaMarketingDetailPageData,
+  GenericBrandingDetailPageData,
+  GenericAdvertisementDetailPageData,
 } from "../assets/data/PageData";
 import seoData from "../assets/data/seo.json";
 import { Helmet } from "react-helmet-async";
@@ -22,7 +21,7 @@ const FaqSection = ({ title, faqs, openIndex, toggle, offset }) => (
     </div>
 
     <div className="space-y-3">
-      {faqs.map((faq, index) => {
+      {faqs && faqs.map((faq, index) => {
         const currentIndex = offset + index;
         const isOpen = openIndex === currentIndex;
 
@@ -39,9 +38,8 @@ const FaqSection = ({ title, faqs, openIndex, toggle, offset }) => (
                 {faq.question}
               </span>
               <span
-                className={`transition-transform duration-300 text-xl text-blue-600 flex-shrink-0 ${
-                  isOpen ? "rotate-180" : ""
-                }`}
+                className={`transition-transform duration-300 text-xl text-blue-600 flex-shrink-0 ${isOpen ? "rotate-180" : ""
+                  }`}
               >
                 <HiChevronDown />
               </span>
@@ -72,27 +70,22 @@ function Faqs() {
     {
       id: "events",
       title: "Frequently Asked Questions - Event Planning",
-      data: EventDetailPageData.faqs,
+      data: GenericWeddingPlannersDetailPageData.faqs || [],
     },
     {
-      id: "mobile-app",
-      title: "Frequently Asked Questions - Mobile App Design",
-      data: MobileAppDesignDetails.faqs,
+      id: "digital",
+      title: "Frequently Asked Questions - Digital Marketing",
+      data: GenericDigitalMediaMarketingDetailPageData.faqs || [],
     },
     {
-      id: "ecommerce",
-      title: "Frequently Asked Questions - Ecommerce",
-      data: EcommerceAppDevelopmentDetails.faqs,
+      id: "branding",
+      title: "Frequently Asked Questions - Branding",
+      data: GenericBrandingDetailPageData.faqs || [],
     },
     {
-      id: "web-design",
-      title: "Frequently Asked Questions - Web Design",
-      data: WebDesignPageDetails.faqs,
-    },
-    {
-      id: "ui-design",
-      title: "Frequently Asked Questions - UI Design",
-      data: UserInterfaceDesignPageDetails.faqs,
+      id: "advertisement",
+      title: "Frequently Asked Questions - Advertisement",
+      data: GenericAdvertisementDetailPageData.faqs || [],
     },
   ];
 
@@ -100,7 +93,7 @@ function Faqs() {
   const allFaqs = useMemo(() => {
     const faqList = [];
     let currentIndex = 0;
-    
+
     faqSections.forEach(section => {
       section.data.forEach(faq => {
         faqList.push({
@@ -112,7 +105,7 @@ function Faqs() {
         currentIndex++;
       });
     });
-    
+
     return faqList;
   }, [faqSections]);
 
@@ -142,7 +135,7 @@ function Faqs() {
   // Group filtered FAQs by section for display
   const groupedFilteredFaqs = useMemo(() => {
     const groups = {};
-    
+
     filteredFaqs.forEach(faq => {
       if (!groups[faq.sectionId]) {
         groups[faq.sectionId] = {
@@ -153,7 +146,7 @@ function Faqs() {
       }
       groups[faq.sectionId].faqs.push(faq);
     });
-    
+
     return groups;
   }, [filteredFaqs, faqSections]);
 
@@ -161,12 +154,12 @@ function Faqs() {
   const calculateSectionOffsets = () => {
     const offsets = {};
     let currentOffset = 0;
-    
+
     faqSections.forEach(section => {
       offsets[section.id] = currentOffset;
       currentOffset += section.data.length;
     });
-    
+
     return offsets;
   };
 
@@ -176,7 +169,7 @@ function Faqs() {
   const handleSearch = (e) => {
     const query = e.target.value;
     setSearchQuery(query);
-    
+
     if (query.trim() && filteredFaqs.length > 0) {
       // Open the first matching FAQ
       setOpenIndex(filteredFaqs[0].globalIndex);
@@ -254,11 +247,10 @@ function Faqs() {
           <div className="flex flex-wrap gap-2">
             <button
               onClick={() => setActiveSection("all")}
-              className={`px-4 py-2 rounded-full text-sm font-medium transition-colors ${
-                activeSection === "all"
+              className={`px-4 py-2 rounded-full text-sm font-medium transition-colors ${activeSection === "all"
                   ? "bg-blue-600 text-white"
                   : "bg-gray-100 text-gray-700 hover:bg-gray-200"
-              }`}
+                }`}
             >
               All FAQs
             </button>
@@ -266,11 +258,10 @@ function Faqs() {
               <button
                 key={section.id}
                 onClick={() => setActiveSection(section.id)}
-                className={`px-4 py-2 rounded-full text-sm font-medium transition-colors ${
-                  activeSection === section.id
+                className={`px-4 py-2 rounded-full text-sm font-medium transition-colors ${activeSection === section.id
                     ? "bg-blue-600 text-white"
                     : "bg-gray-100 text-gray-700 hover:bg-gray-200"
-                }`}
+                  }`}
               >
                 {section.title.split(" - ")[1] || section.title}
               </button>
@@ -327,9 +318,8 @@ function Faqs() {
                               {faq.question}
                             </span>
                             <span
-                              className={`transition-transform duration-300 text-xl text-blue-600 flex-shrink-0 ${
-                                isOpen ? "rotate-180" : ""
-                              }`}
+                              className={`transition-transform duration-300 text-xl text-blue-600 flex-shrink-0 ${isOpen ? "rotate-180" : ""
+                                }`}
                             >
                               <HiChevronDown />
                             </span>

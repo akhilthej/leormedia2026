@@ -58,12 +58,11 @@ const Footer = () => {
                 <div>
                   <p className="font-medium text-secondary uppercase tracking-wider">Services</p>
                   <nav className="flex flex-col mt-4 space-y-2 text-[12px] text-secondary">
-                    <a href="/services/events" className="hover:text-primary transition-colors"> Events </a>
+                    <a href="/services/wedding-planners" className="hover:text-primary transition-colors"> Wedding Planners </a>
                     <a href="https://www.vivahamco.com/" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors"> Wedding </a>
-                    <a href="/services/digital-marketing-company" className="hover:text-primary transition-colors"> Digital Marketing </a>
-                    <a href="/services/branding-comapny" className="hover:text-primary transition-colors"> Branding </a>
-                    <a href="/services/advertising-company" className="hover:text-primary transition-colors"> Advertising </a>
-                    <a href="/services/multimedia-company" className="hover:text-primary transition-colors"> Multimedia </a>
+                    <a href="/services/digital-media-marketing" className="hover:text-primary transition-colors"> Digital Media Marketing </a>
+                    <a href="/services/branding" className="hover:text-primary transition-colors"> Branding </a>
+                    <a href="/services/advertisement" className="hover:text-primary transition-colors"> Advertisement </a>
                   </nav>
                 </div>
                 <div>

@@ -3,7 +3,6 @@ import DigitalmarketingIcon from "../Icons/digitalmarketingicon.webp";
 import Advertisingicon from "../Icons/advertisingicon.webp";
 import Graphicdesignicon from "../Icons/graphicdesignicon.webp";
 import Webdevelopmenticon from "../Icons/webdevelopmenticon.webp";
-import Mobileappicon from "../Icons/mobileappicon.webp";
 import Brandingicon from "../Icons/brandingicon.webp";
 import CSDLogo from "../CSDLogo.svg" 
 import CSDLogoAbout from "../CSDLogo.svg" 
@@ -14,17 +13,6 @@ import crmermpannel from "../Icons/Services_icons/WebDevelopment/crmermpannel.we
 import ecommerce from "../Icons/Services_icons/WebDevelopment/ecommerce.webp";
 import WebRevamp from "../Icons/Services_icons/WebDevelopment/WebRevamp.webp";
 
-import AndroidAppDevelopment from "../Icons/Services_icons/MobileApp/AndroidAppDevelopment.webp";
-import AppMaintenanceSupport from "../Icons/Services_icons/MobileApp/AppMaintenanceSupport.webp";
-import AppMonetizationStrategy from "../Icons/Services_icons/MobileApp/AppMonetizationStrategy.webp";
-import AppPrototyping from "../Icons/Services_icons/MobileApp/AppPrototyping.webp";
-import AppSecurity from "../Icons/Services_icons/MobileApp/AppSecurity.webp";
-import AppStoreOptimization from "../Icons/Services_icons/MobileApp/AppStoreOptimization.webp";
-import AppTestingQuality from "../Icons/Services_icons/MobileApp/AppTestingQuality.webp";
-import CrossPlatformAppDevelopment from "../Icons/Services_icons/MobileApp/CrossPlatformAppDevelopment.webp";
-import EcommerceAppDev from "../Icons/Services_icons/MobileApp/EcommerceAppDev.webp";
-import iOSAppDevelopment from "../Icons/Services_icons/MobileApp/iOS-AppDevelopment.webp";
-import MobileApp from "../Icons/Services_icons/MobileApp/MobileApp.webp";
 
 import DisplayAdvertising from "../Icons/Services_icons/Advertising/DisplayAdvertising.webp";
 import InGameAdvertising from "../Icons/Services_icons/Advertising/In-GameAdvertising.webp";
@@ -96,7 +84,7 @@ import VisualID from '../Icons/Services_icons/Branding/Visual Identity Design.we
 
 
 
-export {DefaultIcon, DigitalmarketingIcon,Advertisingicon,Graphicdesignicon,Webdevelopmenticon,Mobileappicon,Brandingicon,CSDLogo,
+export {DefaultIcon, DigitalmarketingIcon,Advertisingicon,Graphicdesignicon,Webdevelopmenticon,Brandingicon,CSDLogo,
 
     DisplayAdvertising,InGameAdvertising,NativeAdvertising,OutdoorAdvertising,PrintAdvertising,ProgrammaticAdvertising,RadioAdvertising,
 TheatreAdvertising,TVAdvertising,VideoAdvertising,
@@ -110,8 +98,6 @@ SocialMediaGraphics,TShirtandMerchandiseDesign,UserExperienceDesign,UserInterfac
   affiliatemarketing,SearchEngineOptimization,ContentMarketing,SocialMediaMarketing,EmailMarketing,PayPerClickAdvertising,AnalyticsandDataAnalysis,
 ConversionRateOptimization,MobileMarketing,VideoMarketing,LocalSEOandMarketing,EcommerceMarketing,MarketingAutomation,RemarketingandRetargeting,InfluencerMarketing,
 
-  AndroidAppDevelopment,AppMaintenanceSupport,AppMonetizationStrategy,AppPrototyping,AppSecurity,AppStoreOptimization,AppTestingQuality,
-  CrossPlatformAppDevelopment,EcommerceAppDev,iOSAppDevelopment,MobileApp,
 
 
   businesswebsite,CSDLogoAbout,

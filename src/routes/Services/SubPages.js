@@ -1,5 +1,5 @@
 import React, { useState, useMemo, useEffect } from "react";
-import { Link } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
 import {
   FaChevronRight,
@@ -7,6 +7,8 @@ import {
   FaQuestion,
   FaStar,
   FaWhatsapp,
+  FaArrowRight,
+  FaCheckCircle,
 } from "react-icons/fa";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { GlobalData } from "../../assets/data/GlodalData";
@@ -55,12 +57,23 @@ const LazyImage = ({ src, alt, className, width, height, ...props }) => {
 };
 
 const SubPages = ({ pageData, seoData }) => {
+  const { category } = useParams();
+  
+  // Use category-specific data if available, otherwise fallback to the provided pageData
+  const data = useMemo(() => {
+    if (pageData && category && pageData[category]) {
+      return pageData[category];
+    }
+    return pageData;
+  }, [pageData, category]);
+
   const [openIndex, setOpenIndex] = useState(null);
 
   // Memoize expensive computations
   const { title, description, keywords, canonical, ogImage } = useMemo(() => {
-    return seoData[pageData.SeoName.seotitle] || {};
-  }, [seoData, pageData.SeoName.seotitle]);
+    if (!data?.SeoName?.seotitle) return {};
+    return seoData[data.SeoName.seotitle] || {};
+  }, [seoData, data?.SeoName?.seotitle]);
 
   const toggle = (index) => {
     setOpenIndex(openIndex === index ? null : index);
@@ -70,76 +83,53 @@ const SubPages = ({ pageData, seoData }) => {
   const servicesGrid = useMemo(
     () => (
       <div className="grid grid-cols-2 md:grid-cols-5 gap-3">
-        {pageData.services.map((service, index) => (
+        {data?.services?.map((service, index) => (
           <div
             key={index}
-            className="text-center p-3 bg-gray-50 rounded-lg border hover:bg-white transition-colors flex flex-col items-center"
+            className="flex flex-col p-4 bg-gray-50 rounded-lg border hover:bg-white transition-colors"
           >
-            <div className="w-10 h-10 flex items-center justify-center text-primary mb-2">
+            <div className="w-10 h-10 flex items-center justify-center text-primary mb-3">
               {typeof service.icon === "string" ? (
-                <LazyImage
+                <img
                   src={service.icon}
-                  className="w-6 h-6 mx-auto"
                   alt={service.title}
+                  className="w-8 h-8 object-contain"
                 />
               ) : (
                 <FontAwesomeIcon icon={service.icon} className="text-2xl" />
               )}
             </div>
-            <p className="font-medium text-xs md:text-sm mb-1">
-              {service.title}
+            <h3 className="font-bold text-lg mb-2">{service.title}</h3>
+            <p className="text-sm text-gray-600 mb-4 flex-1">
+              {service.description}
             </p>
-            <p className="text-xs text-gray-600 flex-1">{service.description}</p>
-            {service.details && (
-              <ul className="text-xs text-gray-600 mt-2 space-y-1 text-left w-full">
-                {service.details.map((point, idx) => (
-                  <li key={idx}>• {point}</li>
-                ))}
-              </ul>
-            )}
-          </div>
-        ))}
-      </div>
-    ),
-    [pageData.services]
-  );
-
-  // Memoize pricing section
-  const pricingSection = useMemo(
-    () => (
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-4 max-w-4xl mx-auto">
-        {pageData.pricing.map((plan, index) => (
-          <div
-            key={index}
-            className={`p-4 rounded-lg border ${
-              plan.highlighted ? "border-primary shadow-lg" : "border-gray-200"
-            } bg-white`}
-          >
-            <h3 className="text-lg font-semibold mb-2">{plan.title}</h3>
-            <p className="text-xl font-bold text-primary mb-3">{plan.price}</p>
-            <ul className="text-sm space-y-1 mb-4">
-              {plan.features.map((item, idx) => (
-                <li key={idx}>• {item}</li>
+            <ul className="space-y-1 mb-4">
+              {service.details?.map((point, idx) => (
+                <li key={idx} className="text-xs text-gray-500 flex items-start">
+                  <span className="text-primary mr-2">•</span>
+                  {point}
+                </li>
               ))}
             </ul>
             <Link
-              to={plan.link}
-              className="inline-flex items-center justify-center w-full bg-primary text-white px-4 py-2 rounded-md text-sm font-medium hover:bg-orange-500 transition-colors"
+              to={service.link}
+              className="inline-flex items-center text-primary font-medium hover:text-orange-600 transition-colors mt-auto"
             >
-              <FaStar className="mr-2" /> Get Started
+              Know More <FaArrowRight className="ml-2 text-xs" />
             </Link>
           </div>
         ))}
       </div>
     ),
-    [pageData.pricing]
+    [data?.services]
   );
+
 
   // Memoize FAQ section
   const faqSection = useMemo(
     () => (
       <div className="space-y-3">
-        {pageData.faqs.map((faq, index) => (
+        {data?.faqs?.map((faq, index) => (
           <div key={index} className="border border-gray-200 rounded-lg">
             <button
               onClick={() => toggle(index)}
@@ -161,7 +151,7 @@ const SubPages = ({ pageData, seoData }) => {
         ))}
       </div>
     ),
-    [pageData.faqs, openIndex]
+    [data.faqs, openIndex]
   );
 
   return (
@@ -182,7 +172,7 @@ const SubPages = ({ pageData, seoData }) => {
         <link rel="canonical" href={canonical} />
 
         {/* Preload critical resources */}
-        <link rel="preload" href={pageData.coverimage} as="image" />
+        <link rel="preload" href={data.coverimage} as="image" />
       </Helmet>
 
       <main className="space-y-8 my-6">
@@ -192,11 +182,11 @@ const SubPages = ({ pageData, seoData }) => {
           <div
             className="absolute inset-0 bg-cover bg-center transition-opacity duration-500"
             style={{
-              backgroundImage: `url("${pageData.coverimage}")`,
+              backgroundImage: `url("${data.coverimage}")`,
               backgroundSize:
-                pageData.coverImage?.style?.backgroundSize || "cover",
+                data.coverImage?.style?.backgroundSize || "cover",
               backgroundPosition:
-                pageData.coverImage?.style?.backgroundPosition || "center",
+                data.coverImage?.style?.backgroundPosition || "center",
             }}
           />
 
@@ -210,11 +200,11 @@ const SubPages = ({ pageData, seoData }) => {
           {/* Content */}
           <div className="relative z-10 text-center text-white max-w-2xl mx-auto">
             <h1 className="text-xl md:text-4xl font-bold mb-4">
-              {pageData.title}
+              {data.title}
             </h1>
-            <p className="text-sm mb-6 opacity-90">{pageData.subtitle}</p>
+            <p className="text-sm mb-6 opacity-90">{data.subtitle}</p>
 
-            <div className="flex flex-wrap justify-center gap-3">
+            <div className="flex wrap justify-center gap-3">
               <Link
                 to="/contactus"
                 className="inline-flex items-center bg-white text-black px-4 py-2 rounded-md text-sm font-medium hover:bg-gray-100 transition-colors"
@@ -234,13 +224,13 @@ const SubPages = ({ pageData, seoData }) => {
         {/* Header Section */}
         <section className="text-center px-4">
           <p className="text-sm text-gray-600 mb-2">
-            {pageData.section2.tagline}
+            {data.section2.tagline}
           </p>
           <h2 className="text-2xl md:text-4xl font-bold bg-gradient-to-r from-yellow-400 to-orange-600 bg-clip-text text-transparent mb-3">
-            {pageData.section2.heading}
+            {data.section2.heading}
           </h2>
           <p className="text-sm text-gray-700 mb-6">
-            {pageData.section2.description}
+            {data.section2.description}
           </p>
 
           <Link
@@ -254,11 +244,7 @@ const SubPages = ({ pageData, seoData }) => {
         {/* Services Grid */}
         <section className="px-4">{servicesGrid}</section>
 
-        {/* Pricing */}
-        <section className="px-4">
-          <h2 className="text-2xl font-bold text-center mb-6">Pricing</h2>
-          {pricingSection}
-        </section>
+      
 
         {/* CTA Section */}
         <section className="text-center bg-primary/80 py-6 mx-4 rounded-lg">
