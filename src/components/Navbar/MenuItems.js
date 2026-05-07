@@ -669,31 +669,3 @@ export const advertisingLinks = [
     icon: faFilm,
   },
 ];
-
-export const moreLinks = [
-  {
-    path: "/blogs",
-    title: "Blogs",
-    description: "Read our latest insights and articles.",
-    icon: faBlog,
-  },
-  {
-    path: "/services",
-    title: "Services",
-    description: "Looking for a Job? Join our team.",
-    icon: faTools,
-  },
-  {
-    path: "/Careers",
-    title: "Careers",
-    description: "Looking for a Job? Join our team.",
-    icon: faBriefcase,
-  },
-
-  {
-    path: "/auth/login",
-    title: "Login",
-    description: "If you are a customer or existing user, please login.",
-    icon: faRightToBracket,
-  },
-];

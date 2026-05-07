@@ -14,7 +14,6 @@ import {
   Aboutus,
   Contactus,
   Services,
-  Careers,
   Blog,
   BlogFullPost,
   FAQ,
@@ -139,7 +138,6 @@ const routes = [
   { path: "/blogs/:slug", element: <BlogFullPost /> },
 
   { path: "/aboutus", element: <Aboutus /> },
-  { path: "/careers", element: <Careers /> },
   { path: "/contactus", element: <Contactus /> },
 
 
@@ -655,7 +653,7 @@ export function App() {
       setIsLoading(true);
       const timer = setTimeout(() => {
         setIsLoading(false);
-      }, 2500); // Loader visible for 2.5 seconds to accommodate animation
+      }, 1000); // Reduced time as animation is removed
       return () => clearTimeout(timer);
     } else {
       setIsLoading(false);
@@ -665,7 +663,6 @@ export function App() {
   // Any route that starts with "/auth" (e.g., /auth/dashboard, /auth/contactus)
   const isAuthRoute =
     location.pathname.startsWith("/auth") &&
-    location.pathname !== "/auth/login";
 
   window.scrollTo(0, 0);
 

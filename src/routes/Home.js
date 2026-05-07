@@ -3,6 +3,15 @@ import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { homepage, EventHeroCover } from "../assets/data/Imagedata";
 import { CONTACTUS_API } from "../hooks/Apis";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+
+// Import generated images
+import WeddingSliderImg from "../assets/Generated/wedding_slider.png";
+import MarketingSliderImg from "../assets/Generated/marketing_slider.png";
+import BrandingSliderImg from "../assets/Generated/branding_slider.png";
+import AdvertisingBgImg from "../assets/Generated/advertising_bg.png";
 
 const HomePage = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -74,6 +83,43 @@ const HomePage = () => {
     "CREATIVE DESIGN",
   ];
 
+  const sliderSettings = {
+    dots: true,
+    infinite: true,
+    speed: 1000,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 5000,
+    fade: true,
+    arrows: false,
+    dotsClass: "slick-dots custom-dots",
+  };
+
+  const heroSlides = [
+    {
+      title: "Wedding Mandapam",
+      subtitle: "Timeless Elegance for Your Special Day",
+      image: WeddingSliderImg,
+      cta: "Plan Your Wedding",
+      link: "/contactus"
+    },
+    {
+      title: "Strategic Marketing",
+      subtitle: "Driving Growth through Innovation",
+      image: MarketingSliderImg,
+      cta: "Grow Your Brand",
+      link: "/contactus"
+    },
+    {
+      title: "Powerful Branding",
+      subtitle: "Creating Identities that Resonate",
+      image: BrandingSliderImg,
+      cta: "Start Branding",
+      link: "/contactus"
+    }
+  ];
+
   const sections = [
     {
       title: "EVENTS MANAGEMENT",
@@ -81,76 +127,114 @@ const HomePage = () => {
       color: "bg-gradient-to-br from-blue-900/90 to-indigo-950/90",
       number: "01",
       description:
-        "Vizag’s premier event partner. From luxury weddings to high-impact corporate launches, we handle every detail with elegance and precision.",
+        "Andhra’s premier event partner. From luxury weddings to high-impact corporate launches, we handle every detail with elegance and precision.",
       image:
         "https://images.unsplash.com/photo-1501281668745-f7f57925c3b4?w=1200&auto=format&fit=crop&q=80",
       stats: [
-        { value: "500+", label: "Events Managed" },
-        { value: "10K+", label: "Happy Guests" },
+        { value: "2000+", label: "Events Managed" },
+        { value: "220+", label: "Corporate Clients" },
         { value: "100%", label: "Execution" },
       ],
       cta: "Plan Your Event",
       detailedServices: [
-        "Wedding Planning & Destination Weddings",
-        "Engagements, Receptions, Mehendi & Sangeet",
-        "Theme Decors & Birthday Parties",
         "Corporate Events & Product Launches",
-        "Concerts, Award Nights & Fashion Shows",
-        "Entertainment & Artist Management",
-        "Hospitality & Photography Services",
+        "Concerts, Award Nights & Music Shows",
+        "Celebrity & Artist Management",
         "Protocol Events & Carnivals",
+        "Sports Events & Marathons",
+        "Exhibitions & Trade Fairs",
       ],
     },
     {
-      title: "BRANDING & OUTDOOR",
-      subtitle: "STRATEGIC VISIBILITY",
-      color: "bg-gradient-to-br from-amber-900/90 to-orange-950/90",
+      title: "LUXURY WEDDINGS",
+      subtitle: "TIMELESS CELEBRATIONS",
+      color: "bg-gradient-to-br from-pink-900/90 to-rose-950/90",
       number: "02",
       description:
-        "Dominate the physical landscape. We provide strategic outdoor media and branding solutions that ensure your brand is seen by millions.",
-      image:
-        "https://t4.ftcdn.net/jpg/05/82/97/27/360_F_582972760_T0T4qTwlZDolGql8CJaD1kMIPrG4vIew.jpg",
+        "Turning your dream wedding into a reality. We specialize in breathtaking decor, seamless coordination, and creating memories that last a lifetime.",
+      image: WeddingSliderImg,
       stats: [
-        { value: "200+", label: "Brands Built" },
-        { value: "360°", label: "Media Coverage" },
-        { value: "50+", label: "Media Formats" },
+        { value: "500+", label: "Weddings" },
+        { value: "Luxury", label: "Decor" },
+        { value: "End-to-End", label: "Planning" },
       ],
-      cta: "Grow Your Brand",
+      cta: "Plan Your Wedding",
       detailedServices: [
-        "Billboards, Unipoles & Building Wraps",
-        "Transit Media (Cabs, Buses, Mobile Vans, Trains)",
-        "Airport & Railway Station Branding",
-        "Mall Branding & Flyover Pillars",
-        "Bus Shelters & Strategic Kiosks",
-        "Print Media (Newspapers & Magazines)",
-        "Electronic Media (TV, Radio, Theater Ads)",
-        "Bench Branding & Airport Trolleys",
+        "Destination Wedding Planning",
+        "Theme Decors & Floral Design",
+        "Catering & Hospitality",
+        "Photography & Cinematography",
+        "Mehendi, Sangeet & Reception",
+        "Guest Management",
       ],
     },
     {
-      title: "ADVERTISING & DIGITAL",
-      subtitle: "GROW YOUR ONLINE PRESENCE",
-      color: "bg-gradient-to-br from-green-900/90 to-teal-950/90",
+      title: "DIGITAL MEDIA MARKETING",
+      subtitle: "DOMINATE THE DIGITAL SPACE",
+      color: "bg-gradient-to-br from-cyan-900/90 to-blue-950/90",
       number: "03",
       description:
-        "Data-driven marketing combined with creative excellence. We help brands scale through smart digital strategies and stunning visual identities.",
-      image:
-        "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=1200&auto=format&fit=crop&q=80",
+        "Innovative digital strategies to boost your online presence. From social media growth to performance marketing, we help you win the digital game.",
+      image: MarketingSliderImg,
       stats: [
-        { value: "100+", label: "Campaigns" },
-        { value: "300%", label: "ROI Increase" },
-        { value: "24/7", label: "Monitoring" },
+        { value: "10M+", label: "Reach" },
+        { value: "300%", label: "Growth" },
+        { value: "Data", label: "Driven" },
       ],
-      cta: "Start Growing",
+      cta: "Go Digital",
       detailedServices: [
-        "Branding Audit, Strategy & Identity",
-        "SEO, SEM & PPC (Google & Meta Ads)",
-        "Social Media Management & PR",
-        "Content Marketing & Influencer Outreach",
-        "Media Buying & Digital Positioning",
-        "Creative Design (Social Media, Posters, Labels)",
-        "Website & App Development",
-        "Brand Activations & Positioning",
+        "Social Media Management",
+        "Performance Marketing (Ads)",
+        "Search Engine Optimization",
+        "Content & Video Marketing",
+        "Influencer Marketing",
+        "Email & WhatsApp Marketing",
+      ],
+    },
+    {
+      title: "BRANDING SOLUTIONS",
+      subtitle: "CRAFTING UNIQUE IDENTITIES",
+      color: "bg-gradient-to-br from-amber-900/90 to-orange-950/90",
+      number: "04",
+      description:
+        "We create powerful brand identities that resonate with your audience. Our design-led approach ensures your brand stands out in a crowded market.",
+      image: BrandingSliderImg,
+      stats: [
+        { value: "200+", label: "Brands Built" },
+        { value: "360°", label: "Branding" },
+        { value: "Unique", label: "Design" },
+      ],
+      cta: "Build Your Brand",
+      detailedServices: [
+        "Logo & Visual Identity Design",
+        "Brand Strategy & Positioning",
+        "Packaging & Label Design",
+        "Corporate Stationery",
+        "Brand Guidelines",
+        "Rebranding Services",
+      ],
+    },
+    {
+      title: "STRATEGIC ADVERTISING",
+      subtitle: "MAXIMUM REACH & IMPACT",
+      color: "bg-gradient-to-br from-red-900/90 to-red-950/90",
+      number: "05",
+      description:
+        "High-impact advertising campaigns across all platforms. We ensure your message reaches the right audience through strategic media placement.",
+      image: AdvertisingBgImg,
+      stats: [
+        { value: "Wide", label: "Coverage" },
+        { value: "High", label: "ROI" },
+        { value: "Expert", label: "Buying" },
+      ],
+      cta: "Advertise Now",
+      detailedServices: [
+        "Outdoor Media (Billboards, Bus Ads)",
+        "Print Media Advertising",
+        "Radio & TV Commercials",
+        "Cinema Advertising",
+        "Transit & Airport Branding",
+        "Mall & BTL Activations",
       ],
     },
   ];
@@ -167,247 +251,52 @@ const HomePage = () => {
   return (
     <>
       {/* Hero Section */}
-      <section
-        className="relative min-h-screen p-4 flex items-center justify-center"
-        style={{
-          backgroundImage: `url("${EventHeroCover}")`,
-          backgroundSize: "cover",
-          backgroundPosition: "center",
-        }}
-      >
-        {/* 🔲 Black Overlay */}
-        <div className="absolute inset-0 bg-black/60"></div>
-
-        {/* 🔹 Content Wrapper */}
-        <div className="relative z-10 w-full">
-          <div className="mb-8 md:mb-12 lg:mb-24">
-            <div
-              className={`transform transition-all duration-1000 ease-out ${isVisible
-                ? "translate-y-0 opacity-100"
-                : "translate-y-10 opacity-0"
-                }`}
-            >
-              <h2 className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-white text-center mt-28">
-                <span className="block">
-                  From Memorable Events to
-                  <span className="block text-primary">
-                    Powerful Brand Growth.
-                  </span>
-                </span>
-              </h2>
-
-              {/* Since 2018 */}
+      {/* Hero Slider Section */}
+      <section className="relative h-screen overflow-hidden">
+        <Slider {...sliderSettings} className="h-full">
+          {heroSlides.map((slide, index) => (
+            <div key={index} className="relative h-screen">
               <div
-                className={`transform transition-all duration-1000 ease-out delay-300 mt-4 ${isVisible
-                  ? "translate-y-0 opacity-100"
-                  : "translate-y-10 opacity-0"
-                  }`}
-              >
-                <p className="text-sm md:text-base mx-auto text-white font-medium text-center">
-                  We plan, create, and promote — all in one place.
-                </p>
-              </div>
-            </div>
-          </div>
-
-          {/* MOBILE LAYOUT - Updated to grid-2 for service cards */}
-          <div className="md:hidden">
-            {/* Service Cards in Grid-2 Layout */}
-            <div className="grid grid-cols-2 gap-6 mb-6">
-              {/* 1. Web Development */}
-              <div
-                className={`transform transition-all duration-700 ease-out delay-500 ${isVisible
-                  ? "translate-y-0 opacity-100"
-                  : "translate-y-10 opacity-0"
-                  }`}
-              >
-                <Link
-                  to="/services/events"
-                  className="group block h-full"
-                >
-                  <div className="h-full">
-                    <h2 className="leading-tight font-TuskerGrotesk text-3xl sm:text-4xl font-bold tracking-wide text-white group-hover:text-primary transition-all duration-300">
-                      <span className="block">
-                        Events
-                      </span>
-                    </h2>
-                    <p className="text-xs sm:text-sm text-white mt-2 font-medium">
-                      Creating unforgettable experiences for every occasion.
-                    </p>
-                  </div>
-                </Link>
-              </div>
-
-              {/* 2. Marketing */}
-              <div
-                className={`transform transition-all duration-700 ease-out delay-700 ${isVisible
-                  ? "translate-y-0 opacity-100"
-                  : "translate-y-10 opacity-0"
-                  }`}
-              >
-                <Link
-                  to="/services/digitalmarketing"
-                  className="group block h-full"
-                >
-                  <div className="h-full">
-                    <h2 className="leading-tight text-right font-TuskerGrotesk text-3xl sm:text-4xl font-bold tracking-wide text-white group-hover:text-primary transition-all duration-300">
-                      <span className="block">
-                        Growth
-                      </span>
-                    </h2>
-                    <p className="text-xs sm:text-sm text-white mt-2 font-medium text-right">
-                      Powerful branding and digital marketing strategies.
-                    </p>
-                  </div>
-                </Link>
-              </div>
-            </div>
-
-            {/* 3. Your Vision, Our Code Perfected. */}
-            <div
-              className={`w-full max-w-md mx-auto transform transition-all duration-700 ease-out delay-900 ${isVisible
-                ? "translate-y-0 opacity-100"
-                : "translate-y-10 opacity-0"
-                } space-y-4 mt-6`}
-            >
-             
-              {/* Animated Titles */}
-              <div className="relative h-8 overflow-hidden">
-                <div
-                  className="transition-transform duration-700 ease-in-out"
-                  style={{
-                    transform: `translateY(-${currentIndex * 2}rem)`,
-                  }}
-                >
-                  {titles.map((title, i) => (
-                    <p
-                      key={i}
-                      className="text-base md:text-lg font-semibold text-primary h-8 flex items-center justify-center"
-                    >
-                      " {title} "
-                    </p>
-                  ))}
+                className="absolute inset-0 bg-cover bg-center transition-transform duration-[2000ms] scale-110"
+                style={{
+                  backgroundImage: `url("${slide.image}")`,
+                }}
+              ></div>
+              <div className="absolute inset-0 bg-black/50 flex items-center justify-center">
+                <div className="text-center px-4">
+                  <h2 className="text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-6 transform transition-all duration-1000">
+                    {slide.title}
+                  </h2>
+                  <p className="text-xl md:text-2xl text-white/90 mb-10 max-w-2xl mx-auto">
+                    {slide.subtitle}
+                  </p>
+                  <Link
+                    to={slide.link}
+                    className="inline-block px-10 py-4 bg-primary text-white font-bold rounded-full hover:bg-white hover:text-primary transition-all duration-300 transform hover:scale-105"
+                  >
+                    {slide.cta}
+                  </Link>
                 </div>
               </div>
             </div>
-          </div>
+          ))}
+        </Slider>
 
-          {/* DESKTOP LAYOUT - Three columns at bottom */}
-          <div className="hidden md:flex flex-col h-[45vh]">
-            <div className="flex-1 flex items-end pb-8">
-              {/* LEFT - Web Development */}
-              <div
-                className={`flex-1 transform transition-all duration-700 ease-out delay-500 ${isVisible
-                  ? "translate-x-0 opacity-100"
-                  : "-translate-x-10 opacity-0"
-                  }`}
-              >
-                <Link
-                  to="/services/events"
-                  className="group block max-w-xs xl:max-w-sm"
-                >
-                  <div>
-                    <h2 className="leading-tight font-TuskerGrotesk text-4xl xl:text-5xl font-bold tracking-wide text-white group-hover:text-primary transition-all duration-300">
-                      <span className="block">
-                        Plan Event
-                      </span>
-                    </h2>
-                    <p className="text-sm xl:text-base text-white mt-2">
-                      Creating unforgettable experiences for weddings and celebrations.
-                    </p>
-                  </div>
-                </Link>
-              </div>
-
-              {/* CENTER - Your Vision, Our Code Perfected. */}
-              <div className="flex-1 flex flex-col items-center justify-end space-y-4">
-                <div
-                  className={`transform transition-all duration-700 ease-out delay-900 ${isVisible
-                    ? "translate-y-0 opacity-100"
-                    : "translate-y-5 opacity-0"
-                    } space-y-4`}
-                >
-              
-
-                  {/* Animated Titles */}
-                  <div className="relative h-8 overflow-hidden">
-                    <div
-                      className="transition-transform duration-700 ease-in-out"
-                      style={{
-                        transform: `translateY(-${currentIndex * 2}rem)`,
-                      }}
-                    >
-                      {titles.map((title, i) => (
-                        <p
-                          key={i}
-                          className="text-base font-semibold text-primary h-8 flex items-center justify-center"
-                        >
-                          " {title} "
-                        </p>
-                      ))}
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              {/* RIGHT - Mobile App Development */}
-              <div
-                className={`flex-1 transform transition-all duration-700 ease-out delay-500 ${isVisible
-                  ? "translate-x-0 opacity-100"
-                  : "translate-x-10 opacity-0"
-                  } flex justify-end`}
-              >
-                <Link
-                  to="/services/digitalmarketing"
-                  className="group block max-w-xs xl:max-w-sm text-right"
-                >
-                  <div>
-                    <h2 className="leading-tight font-TuskerGrotesk text-4xl xl:text-5xl font-bold tracking-wide text-white group-hover:text-primary transition-all duration-300">
-                      <span className="block">
-                        Grow Business
-                      </span>
-                    </h2>
-                    <p className="text-sm xl:text-base text-white mt-2">
-                      Scale your brand with strategic advertising and digital marketing.
-                    </p>
-                  </div>
-                </Link>
-              </div>
-            </div>
-          </div>
-
-          {/* BOTTOM ROW - Navigation & Locations (Common for both layouts) */}
-          <div
-            className={`transform transition-all duration-700 ease-out delay-1100 ${isVisible
-              ? "translate-y-0 opacity-100"
-              : "translate-y-10 opacity-0"
-              } mt-8 md:mt-12 lg:mt-0 lg:pt-8`}
-          >
-            <div className="grid grid-cols-1 gap-6 items-center">
-          
-
-              {/* Locations */}
-              <div className="flex items-center justify-center lg:justify-end gap-3 text-[12px] text-orange-500 font-medium">
-                {["Andhra Pradesh", "Telangana"].map(
-                  (city, index) => (
-                    <span
-                      key={city}
-                      className={`bg-orange-50 px-3 py-1.5 rounded-full transition-all duration-500 ${isVisible
-                        ? "scale-100 opacity-100"
-                        : "scale-75 opacity-0"
-                        } hover:bg-orange-100 cursor-default`}
-                      style={{
-                        transitionDelay: `${1300 + index * 100}ms`,
-                      }}
-                    >
-                      {city}
-                    </span>
-                  ),
-                )}
-              </div>
-            </div>
-          </div>
-        </div>
+        {/* Custom Styles for Slick Dots */}
+        <style dangerouslySetInnerHTML={{ __html: `
+          .custom-dots {
+            bottom: 40px !important;
+          }
+          .custom-dots li button:before {
+            color: white !important;
+            font-size: 12px !important;
+            opacity: 0.5 !important;
+          }
+          .custom-dots li.slick-active button:before {
+            color: #FF5E0E !important; /* Your primary color */
+            opacity: 1 !important;
+          }
+        `}} />
       </section>
       <section id="about" className="py-16 md:py-24 bg-white text-black">
         <div className="container mx-auto px-4 md:px-8 lg:px-16">
@@ -424,122 +313,29 @@ const HomePage = () => {
             </p>
           </div>
 
-          <div className="grid lg:grid-cols-2 gap-12 md:gap-20 items-center">
+          <div className="max-w-5xl mx-auto">
             {/* Left Column: Mission & Journey */}
-            <div>
-              <div className="mb-10">
-                <h3 className="text-2xl md:text-3xl font-bold mb-6">
-                  One Team for Events +{" "}
-                  <span className="text-primary">Marketing Success.</span>
+            <div className="mb-12">
+              <div className="mb-10 text-center">
+                <h3 className="text-2xl md:text-4xl font-bold mb-8">
+                  Creating Memories, <span className="text-primary">Delivering Excellence.</span>
                 </h3>
-                <p className="text-gray-600 mb-6">
-                  Leor Media is a unique hybrid agency specializing in both 
-                  Event Management and Strategic Branding. We believe that 
-                  great events build memories, and great marketing builds 
-                  futures. We provide both under one roof.
+                <p className="text-gray-600 text-lg md:text-xl leading-relaxed mb-6">
+                  Leor Media has been successfully organizing small to big scale weddings since 2016. We create the
+                  perfect weddings for customers right from the planning to its execution. Our personalized wedding
+                  packages and creative works, add that glam to your wedding while keeping customers budget in
+                  mind.
                 </p>
-                <p className="text-gray-600">
-                  Whether you are planning a luxury wedding or launching 
-                  a nationwide marketing campaign, our team ensures 
-                  meticulous execution and creative innovation. We have 
-                  managed hundreds of campaigns and events, making us 
-                  one of the most trusted names in the region.
+                <p className="text-gray-600 text-lg md:text-xl leading-relaxed">
+                  Our packages incorporate even minute details from venue selection, theme recommendation, menu options
+                  and to hospitality so that we can make worry-free big day. We believe making memories are the best gifts
+                  to any events for which Leor Media strives 100% to make them more beautiful.
                 </p>
               </div>
 
-              {/* Stats Highlights */}
-              <div className="grid grid-cols-2 md:grid-cols-4 gap-6 border-t border-gray-200 pt-10">
-                <div className="text-center">
-                  <div className="text-3xl md:text-4xl font-bold text-primary mb-2">
-                    8+
-                  </div>
-                  <div className="text-sm text-gray-500">
-                    Years of Excellence
-                  </div>
-                </div>
-                <div className="text-center">
-                  <div className="text-3xl md:text-4xl font-bold text-primary mb-2">
-                    50+
-                  </div>
-                  <div className="text-sm text-gray-500">
-                    Projects Delivered
-                  </div>
-                </div>
-                <div className="text-center">
-                  <div className="text-3xl md:text-4xl font-bold text-primary mb-2">
-                    100%
-                  </div>
-                  <div className="text-sm text-gray-500">
-                    Client Satisfaction
-                  </div>
-                </div>
-                <div className="text-center">
-                  <div className="text-3xl md:text-4xl font-bold text-primary mb-2">
-                    200+
-                  </div>
-                  <div className="text-sm text-gray-500">Events & Projects</div>
-                </div>
-              </div>
+         
             </div>
 
-            {/* Right Column: Core Values & USP */}
-            <div className="bg-gray-50 p-8 rounded-2xl border border-gray-200">
-              <h3 className="text-2xl font-bold mb-8 pb-4 border-b border-gray-200">
-                Our Philosophy & Core Values
-              </h3>
-
-              <div className="space-y-8">
-                <div className="flex items-start space-x-4">
-                  <div className="flex-shrink-0 w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center">
-                    <span className="text-primary font-bold">✓</span>
-                  </div>
-                  <div>
-                    <h4 className="text-xl font-semibold mb-2">
-                      Creative + Execution Focused
-                    </h4>
-                    <p className="text-gray-600">
-                      We don't just plan; we execute with precision. Every detail 
-                      is crafted to resonate with your audience and leave a 
-                      lasting impression.
-                    </p>
-                  </div>
-                </div>
-
-                <div className="flex items-start space-x-4">
-                  <div className="flex-shrink-0 w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center">
-                    <span className="text-primary font-bold">✓</span>
-                  </div>
-                  <div>
-                    <h4 className="text-xl font-semibold mb-2">
-                      Affordable & Customized
-                    </h4>
-                    <p className="text-gray-600">
-                      Quality doesn't have to be expensive. We provide tailored 
-                      solutions that fit your budget while maintaining the 
-                      highest standards of excellence.
-                    </p>
-                  </div>
-                </div>
-
-                <div className="flex items-start space-x-4">
-                  <div className="flex-shrink-0 w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center">
-                    <span className="text-primary font-bold">✓</span>
-                  </div>
-                  <div>
-                    <h4 className="text-xl font-semibold mb-2">
-                      Strong Local Experience
-                    </h4>
-                    <p className="text-gray-600">
-                      With years of experience in Andhra Pradesh and Telangana, 
-                      we understand the local market and culture better than 
-                      anyone else.
-                    </p>
-                  </div>
-                </div>
-              </div>
-
-           
-            </div>
           </div>
 
           {/* CTA Section */}
@@ -587,8 +383,35 @@ const HomePage = () => {
         </div>
       </section>
 
+      {/* Fun Factor Section */}
+      <section className="py-20 bg-primary text-white overflow-hidden relative">
+        <div className="absolute top-0 left-0 w-full h-full opacity-10">
+          <div className="absolute top-10 left-10 w-64 h-64 border-8 border-white rounded-full"></div>
+          <div className="absolute bottom-10 right-10 w-96 h-96 border-8 border-white rounded-full"></div>
+        </div>
+        
+        <div className="container mx-auto px-4 relative z-10">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl md:text-5xl font-bold mb-4 font-TuskerGrotesk">OUR TRACK RECORD</h2>
+            <p className="text-xl text-white/80">A decade of excellence, hundreds of projects, and thousands of happy memories.</p>
+          </div>
 
-
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-12">
+            {[
+              { value: "10+", label: "Years of Experience", icon: "⏳" },
+              { value: "600+", label: "Projects Delivered", icon: "💼" },
+              { value: "2000+", label: "Events & Projects", icon: "🎉" },
+              { value: "100%", label: "Clients Satisfaction", icon: "😊" }
+            ].map((stat, idx) => (
+              <div key={idx} className="bg-white/10 backdrop-blur-md p-8 rounded-3xl border border-white/20 transform hover:-translate-y-2 transition-all duration-300 text-center">
+                <div className="text-4xl mb-4">{stat.icon}</div>
+                <div className="text-4xl md:text-5xl font-bold mb-2 font-TuskerGrotesk">{stat.value}</div>
+                <div className="text-sm md:text-base font-medium text-white/80 uppercase tracking-widest">{stat.label}</div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
 
       {/* Our Services */}
       <div className="relative">

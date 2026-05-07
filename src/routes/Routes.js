@@ -12,7 +12,6 @@ import Home from "./Home.js";
 import Blog from "./Blogs/Blog";
 import BlogFullPost from "./Blogs/BlogFullPost";
 import Aboutus from "./Aboutus";
-import Careers from "./Careers/careers";
 import Contactus from "./Contactus.js";
 
 import Services from "./Services/Services.js";
@@ -52,7 +51,6 @@ export {
   BlogFullPost,
   Aboutus,
   Contactus,
-  Careers,
   ReturnPolicy,
   Services,
   FAQ,

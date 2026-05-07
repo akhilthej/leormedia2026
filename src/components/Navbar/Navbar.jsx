@@ -14,7 +14,6 @@ import {
   multimediaLinks,
   brandingLinks,
   advertisingLinks,
-  moreLinks,
 } from "./MenuItems";
 import {
   faBars,
@@ -275,14 +274,14 @@ const Navbar = () => {
     },
     {
       key: "weddings",
-      title: "Wedding Planners (vivahamco.com)",
+      title: "Wedding Planners",
       href: "https://www.vivahamco.com/",
       links: [],
       icon: faRing,
     },
     {
       key: "digitalMarketing",
-      title: "Digital Marketing",
+      title: "Digital Media Marketing",
       href: "/services/digital-marketing-company",
       links: digitalMarketingLinks,
       imageSrc: NavImages.link2,
@@ -312,11 +311,19 @@ const Navbar = () => {
       imageSrc: NavImages.link4,
       icon: faBullhorn,
     },
-   
+
     {
       key: "contactus",
       title: "Get in-Touch",
       href: "/contactus",
+      links: [],
+      imageSrc: null,
+      icon: faCommentDots,
+    },
+    {
+      key: "contactus",
+      title: "Blogs",
+      href: "/blogs",
       links: [],
       imageSrc: null,
       icon: faCommentDots,
@@ -329,14 +336,7 @@ const Navbar = () => {
       imageSrc: null,
       icon: faRightToBracket,
     },
-    {
-      key: "Login",
-      title: "Login",
-      href: "/auth/login",
-      links: [],
-      imageSrc: null,
-      icon: faRightToBracket,
-    },
+
   ];
 
   const toggleMobileSubmenu = (key) => {
@@ -353,9 +353,8 @@ const Navbar = () => {
 
   return (
     <section
-      className={`origin-top-right fixed  w-full top-0 z-50 shadow-md backdrop-blur-sm transition-colors duration-500 ${
-        scrolled ? "bg-white/95" : "bg-white"
-      }`}
+      className={`origin-top-right fixed  w-full top-0 z-50 shadow-md backdrop-blur-sm transition-colors duration-500 ${scrolled ? "bg-white/95" : "bg-white"
+        }`}
     >
       {/* Main navbar */}
       <div className="sm:px-4 w-full h-18 flex justify-between items-center text-gray-800 relative">
@@ -382,7 +381,7 @@ const Navbar = () => {
                 }
               >
                 <div className="inline-flex font-normal antialiased justify-center items-center gap-1 w-full rounded-md px-3 py-2 text-[13px] text-gray-800 hover:text-yellow-500 cursor-pointer transition-colors">
-                 
+
                   <a href={menu.href}>{menu.title}</a>
 
                   {/* Toggle Chevron Up/Down */}
@@ -423,32 +422,13 @@ const Navbar = () => {
               </button>
             </li>
 
-            {/* More Menu for Desktop */}
-            <li
-              className="relative hidden lg:block"
-              onMouseEnter={() => handleMouseEnter("more", true)}
-              onMouseLeave={() => handleMouseLeave("more", true)}
-            >
-              <button className="text-gray-800 hover:text-yellow-500 px-3 py-2">
-                <FontAwesomeIcon icon={faBars} className="text-xl" />
-              </button>
-              <DropdownMenu
-                isOpen={openMenus.more}
-                links={moreLinks}
-                imageSrc={NavImages.link4}
-                onMouseEnter={() => handleMouseEnter("more", true)}
-                onMouseLeave={() => handleMouseLeave("more", true)}
-                closeAllMenus={closeAllMenus}
-              />
-            </li>
           </ul>
         </div>
       </div>
 
       <div
-        className={`fixed inset-0 bg-white z-[60] flex flex-col transition-transform duration-500 ease-in-out lg:hidden h-screen ${
-          isOpen ? "translate-y-0" : "-translate-y-full"
-        }`}
+        className={`fixed inset-0 bg-white z-[60] flex flex-col transition-transform duration-500 ease-in-out lg:hidden h-screen ${isOpen ? "translate-y-0" : "-translate-y-full"
+          }`}
       >
         {/* Mobile Menu Header (Sticky) */}
         <div className="flex-none flex justify-between items-center p-4 border-b border-gray-200 bg-white/95 backdrop-blur-md">
@@ -486,18 +466,16 @@ const Navbar = () => {
                             ? faChevronUp
                             : faChevronDown
                         }
-                        className={`text-sm text-gray-500 transition-transform duration-300 ${
-                          openMobileSubmenus[menu.key] ? "rotate-180" : ""
-                        }`}
+                        className={`text-sm text-gray-500 transition-transform duration-300 ${openMobileSubmenus[menu.key] ? "rotate-180" : ""
+                          }`}
                       />
                     </button>
 
                     <div
-                      className={`overflow-hidden transition-all duration-300 ease-in-out ${
-                        openMobileSubmenus[menu.key]
+                      className={`overflow-hidden transition-all duration-300 ease-in-out ${openMobileSubmenus[menu.key]
                           ? "max-h-[1000px] opacity-100 mb-4"
                           : "max-h-0 opacity-0"
-                      }`}
+                        }`}
                     >
                       <div className="ml-8 border-l border-gray-200 pl-4">
                         {menu.links[0]?.category ? (
