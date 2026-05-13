@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.37767bfa.css",
-    "main.js": "/static/js/main.69d71bdd.js",
+    "main.css": "/static/css/main.1d7f6e8f.css",
+    "main.js": "/static/js/main.b71a0518.js",
     "static/media/VahiniArtsPrivateLimited.png": "/static/media/VahiniArtsPrivateLimited.d77b258a553e53a5c0ba.png",
     "static/media/Blogimage1.png": "/static/media/Blogimage1.a707417fbcc7c798d0ba.png",
     "static/media/wedding_slider.png": "/static/media/wedding_slider.a2542d25162c4d6fdf8f.png",
@@ -149,11 +149,11 @@
     "static/media/User Experience Design.webp": "/static/media/User Experience Design.fda7b364511c5ead9577.webp",
     "static/media/slick.ttf": "/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "/static/media/slick.295183786cd8a1389865.woff",
-    "main.37767bfa.css.map": "/static/css/main.37767bfa.css.map",
-    "main.69d71bdd.js.map": "/static/js/main.69d71bdd.js.map"
+    "main.1d7f6e8f.css.map": "/static/css/main.1d7f6e8f.css.map",
+    "main.b71a0518.js.map": "/static/js/main.b71a0518.js.map"
   },
   "entrypoints": [
-    "static/css/main.37767bfa.css",
-    "static/js/main.69d71bdd.js"
+    "static/css/main.1d7f6e8f.css",
+    "static/js/main.b71a0518.js"
   ]
 }
