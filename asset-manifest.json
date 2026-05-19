@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.a5c56e31.css",
-    "main.js": "/static/js/main.3711dec5.js",
+    "main.css": "/static/css/main.e22111c2.css",
+    "main.js": "/static/js/main.0be471b0.js",
     "static/media/Blogimage1.png": "/static/media/Blogimage1.a707417fbcc7c798d0ba.png",
     "static/media/receptions.png": "/static/media/receptions.360248d05893b50ee6dd.png",
     "static/media/theme-decor.png": "/static/media/theme-decor.30568d295253f62438fa.png",
@@ -37,6 +37,7 @@
     "static/media/BrandingCoverHomeImage.webp": "/static/media/BrandingCoverHomeImage.38ce18b460ec734822f6.webp",
     "static/media/ourproducts_contact.jpg": "/static/media/ourproducts_contact.67af5d70f19f4b7c58a8.jpg",
     "static/media/graphicdesignicon.webp": "/static/media/graphicdesignicon.623527ed620b65362ffb.webp",
+    "static/media/pexels-photo-196644.jpeg": "/static/media/pexels-photo-196644.850403f393cc64f67154.jpeg",
     "static/media/HomeCommunityCover.webp": "/static/media/HomeCommunityCover.8de671288c05d30e87ad.webp",
     "static/media/digitalmarketingicon.webp": "/static/media/digitalmarketingicon.18cd736c70ca942cb7be.webp",
     "static/media/AdvertisingCoverHomeImage.webp": "/static/media/AdvertisingCoverHomeImage.b4bf9368d061af7fbddb.webp",
@@ -54,7 +55,6 @@
     "static/media/DigitalMarketingImage.webp": "/static/media/DigitalMarketingImage.141decff2be1ee95aeff.webp",
     "static/media/CEO_OriginalImage.webp": "/static/media/CEO_OriginalImage.fc2e8944ac94fefe12f4.webp",
     "static/media/RemarketingandRetargeting.webp": "/static/media/RemarketingandRetargeting.bc6a7e1c6c04f4d484dd.webp",
-    "static/media/TuskerGrotesk.otf": "/static/media/TuskerGrotesk.536c60e4ff8d77157155.otf",
     "static/media/Business Card.webp": "/static/media/Business Card.2137db28b63c2943bc6d.webp",
     "static/media/WebDevelopmentImage.webp": "/static/media/WebDevelopmentImage.ce74255527cfbcdbf029.webp",
     "static/media/Signage and Billboard Design.webp": "/static/media/Signage and Billboard Design.31f6ae7c62d2cc11fdf5.webp",
@@ -130,17 +130,18 @@
     "static/media/LeormediaLogo.svg": "/static/media/LeormediaLogo.b98d6b9ca996cb77c52d2998dda744b0.svg",
     "static/media/LogoFooter.svg": "/static/media/LogoFooter.84d1a4debb307374c874eb8820a246a1.svg",
     "static/media/Infographic Design.webp": "/static/media/Infographic Design.043ad33d34e7d3409101.webp",
+    "static/media/google-favicon.ico": "/static/media/google-favicon.68113a27e75d141340fe.ico",
     "static/media/slick.svg": "/static/media/slick.2630a3e3eab21c607e21.svg",
     "static/media/Visual Identity Design.webp": "/static/media/Visual Identity Design.e76d5ee740f5fee02cdd.webp",
     "static/media/slick.eot": "/static/media/slick.a4e97f5a2a64f0ab1323.eot",
     "static/media/User Experience Design.webp": "/static/media/User Experience Design.fda7b364511c5ead9577.webp",
     "static/media/slick.ttf": "/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "/static/media/slick.295183786cd8a1389865.woff",
-    "main.a5c56e31.css.map": "/static/css/main.a5c56e31.css.map",
-    "main.3711dec5.js.map": "/static/js/main.3711dec5.js.map"
+    "main.e22111c2.css.map": "/static/css/main.e22111c2.css.map",
+    "main.0be471b0.js.map": "/static/js/main.0be471b0.js.map"
   },
   "entrypoints": [
-    "static/css/main.a5c56e31.css",
-    "static/js/main.3711dec5.js"
+    "static/css/main.e22111c2.css",
+    "static/js/main.0be471b0.js"
   ]
 }
