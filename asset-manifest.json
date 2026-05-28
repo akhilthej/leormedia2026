@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.9d582bdb.css",
-    "main.js": "/static/js/main.aa76cc03.js",
+    "main.js": "/static/js/main.bdc8fb2a.js",
     "static/media/Blogimage1.png": "/static/media/Blogimage1.a707417fbcc7c798d0ba.png",
     "static/media/receptions.png": "/static/media/receptions.360248d05893b50ee6dd.png",
     "static/media/theme-decor.png": "/static/media/theme-decor.30568d295253f62438fa.png",
@@ -74,6 +74,7 @@
     "static/media/social_campaign.png": "/static/media/social_campaign.c1a559d53cc21d087e40.png",
     "static/media/social_creatives.png": "/static/media/social_creatives.c1a559d53cc21d087e40.png",
     "static/media/seo.png": "/static/media/seo.9142c9975b7dabe839a0.png",
+    "static/media/15.png": "/static/media/15.b37bddb7023ae300b982.png",
     "static/media/annual_day.png": "/static/media/annual_day.9770cece697a1cb53d0e.png",
     "static/media/award_functions.png": "/static/media/award_functions.9770cece697a1cb53d0e.png",
     "static/media/celebrity_management.png": "/static/media/celebrity_management.9770cece697a1cb53d0e.png",
@@ -95,6 +96,9 @@
     "static/media/branding_slider.png": "/static/media/branding_slider.b11ec0da0141d45f7961.png",
     "static/media/web_commercials.png": "/static/media/web_commercials.c86cea31b8e9eb93805a.png",
     "static/media/EventHeroCover.png": "/static/media/EventHeroCover.96ae4c76307959499221.png",
+    "static/media/12.png": "/static/media/12.d67658ab9c00ba90a97d.png",
+    "static/media/35.png": "/static/media/35.ee92d202f675d5981c69.png",
+    "static/media/18.png": "/static/media/18.df84a2e55d9b40342f73.png",
     "static/media/ServicesCoverImage.png": "/static/media/ServicesCoverImage.4675345d96e889b77f10.png",
     "static/media/BrandingCoverImage.png": "/static/media/BrandingCoverImage.1ee6ba7c79391c060289.png",
     "static/media/religious_traditional.png": "/static/media/religious_traditional.1ee6ba7c79391c060289.png",
@@ -105,6 +109,7 @@
     "static/media/GraphicDesignBG.webp": "/static/media/GraphicDesignBG.f7b182fee46e3db9d1f5.webp",
     "static/media/AdvertisitngCoverImage.png": "/static/media/AdvertisitngCoverImage.cd017fc56f2884ab2195.png",
     "static/media/brandingicon.webp": "/static/media/brandingicon.06fea8741911d9805c13.webp",
+    "static/media/16.png": "/static/media/16.c629472999e8ce6f2bb0.png",
     "static/media/BrandingCoverHomeImage.webp": "/static/media/BrandingCoverHomeImage.38ce18b460ec734822f6.webp",
     "static/media/ourproducts_contact.jpg": "/static/media/ourproducts_contact.67af5d70f19f4b7c58a8.jpg",
     "static/media/graphicdesignicon.webp": "/static/media/graphicdesignicon.623527ed620b65362ffb.webp",
@@ -121,7 +126,7 @@
     "static/media/WebDevelopmentCoverHomeImage.webp": "/static/media/WebDevelopmentCoverHomeImage.64273b1eaa0400eb5c8e.webp",
     "static/media/WeddingCoverImage.webp": "/static/media/WeddingCoverImage.64273b1eaa0400eb5c8e.webp",
     "static/media/DigiatalMarketingCoverHomeImage.webp": "/static/media/DigiatalMarketingCoverHomeImage.a984ac01860033e720bf.webp",
-    "static/media/Food Ex.png": "/static/media/Food Ex.b7edc1a02abb3c131685.png",
+    "static/media/2.png": "/static/media/2.b7edc1a02abb3c131685.png",
     "static/media/GraphicDesigningCoverHomeImage.webp": "/static/media/GraphicDesigningCoverHomeImage.e9a189aa5dcf0c737a81.webp",
     "static/media/DigitalMarketingImage.webp": "/static/media/DigitalMarketingImage.141decff2be1ee95aeff.webp",
     "static/media/CEO_OriginalImage.webp": "/static/media/CEO_OriginalImage.fc2e8944ac94fefe12f4.webp",
@@ -129,6 +134,7 @@
     "static/media/Business Card.webp": "/static/media/Business Card.2137db28b63c2943bc6d.webp",
     "static/media/WebDevelopmentImage.webp": "/static/media/WebDevelopmentImage.ce74255527cfbcdbf029.webp",
     "static/media/Signage and Billboard Design.webp": "/static/media/Signage and Billboard Design.31f6ae7c62d2cc11fdf5.webp",
+    "static/media/4.png": "/static/media/4.fe077178d0e25e92bf48.png",
     "static/media/AdvertisingImage.webp": "/static/media/AdvertisingImage.5b2f0f3229acf49e9cf3.webp",
     "static/media/Brand Identity Design.webp": "/static/media/Brand Identity Design.f613d642a03361581cc7.webp",
     "static/media/Web Design.webp": "/static/media/Web Design.d548cba5b842dcbda0bb.webp",
@@ -138,6 +144,7 @@
     "static/media/LocalSEOandMarketing.webp": "/static/media/LocalSEOandMarketing.91014b317b660a433687.webp",
     "static/media/Brand Research and Analysis.webp": "/static/media/Brand Research and Analysis.f2611dae32be24df6685.webp",
     "static/media/Goodfirms_Logo.jpg": "/static/media/Goodfirms_Logo.67b2588943bf65154759.jpg",
+    "static/media/42.png": "/static/media/42.5cc25bbdeb5a67c75ea3.png",
     "static/media/NativeAdvertising.webp": "/static/media/NativeAdvertising.acfd12fccea85839267b.webp",
     "static/media/ProgrammaticAdvertising.webp": "/static/media/ProgrammaticAdvertising.5bad61773d6399da32a4.webp",
     "static/media/payperclick.webp": "/static/media/payperclick.754743ec196d226abd19.webp",
@@ -169,12 +176,14 @@
     "static/media/In-GameAdvertising.webp": "/static/media/In-GameAdvertising.81860e1033ee9b5f00c5.webp",
     "static/media/OutdoorAdvertising.webp": "/static/media/OutdoorAdvertising.54b479f56857aac8ab4d.webp",
     "static/media/HiringModel.webp": "/static/media/HiringModel.8f7c04f12080ae607d77.webp",
+    "static/media/9.png": "/static/media/9.8f1e7756710e98e23a0b.png",
     "static/media/Brand Logo Design.webp": "/static/media/Brand Logo Design.63010e95de0f90e2e01e.webp",
     "static/media/searchengineoptimization.webp": "/static/media/searchengineoptimization.be31235f9be9f45ae6d6.webp",
     "static/media/FixedPrice.webp": "/static/media/FixedPrice.ca000ae09a2d321c2375.webp",
     "static/media/Brand Messaging.webp": "/static/media/Brand Messaging.dd55365530eeff38acde.webp",
     "static/media/Brand Positioning.webp": "/static/media/Brand Positioning.5ad6c95fb98d836464da.webp",
     "static/media/Brand Naming.webp": "/static/media/Brand Naming.9969d249d1c3b26a3405.webp",
+    "static/media/5.png": "/static/media/5.fc4ce913fcded4a3b754.png",
     "static/media/LogoLoader.svg": "/static/media/LogoLoader.f8797de063126cb80863ada198cc11da.svg",
     "static/media/RadioAdvertising.webp": "/static/media/RadioAdvertising.11d4964c4a5f1e066d88.webp",
     "static/media/Illustation Services.webp": "/static/media/Illustation Services.d1fde4ec632f8500b858.webp",
@@ -209,10 +218,10 @@
     "static/media/slick.ttf": "/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "/static/media/slick.295183786cd8a1389865.woff",
     "main.9d582bdb.css.map": "/static/css/main.9d582bdb.css.map",
-    "main.aa76cc03.js.map": "/static/js/main.aa76cc03.js.map"
+    "main.bdc8fb2a.js.map": "/static/js/main.bdc8fb2a.js.map"
   },
   "entrypoints": [
     "static/css/main.9d582bdb.css",
-    "static/js/main.aa76cc03.js"
+    "static/js/main.bdc8fb2a.js"
   ]
 }
